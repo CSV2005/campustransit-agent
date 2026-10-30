@@ -1,0 +1,100 @@
+[
+  {
+    "id": "r01",
+    "query": "documents required for a student bus pass",
+    "expect_any": [
+      {
+        "source_file": "faq.md",
+        "heading": "13. What documents do I need for a student pass?"
+      },
+      {
+        "source_file": "01_student_bus_pass_basics.md",
+        "heading": "Documents required"
+      }
+    ]
+  },
+  {
+    "id": "r02",
+    "query": "is the student pass free in 2026-27",
+    "expect_any": [
+      {
+        "pass_id": "karnataka_free_student_pass"
+      },
+      {
+        "source_file": "02_free_student_pass_2026.md"
+      }
+    ]
+  },
+  {
+    "id": "r03",
+    "query": "Shakti scheme free travel for women eligibility",
+    "expect_any": [
+      {
+        "pass_id": "shakti_scheme"
+      },
+      {
+        "source_file": "03_ksrtc_and_shakti.md"
+      }
+    ]
+  },
+  {
+    "id": "r04",
+    "query": "how much is the AC Vajra student monthly pass",
+    "expect_any": [
+      {
+        "pass_id": "bmtc_student_pass_ac_vajra"
+      },
+      {
+        "source_file": "faq.md",
+        "heading": "4. How much is the BMTC AC (Vajra) student pass?"
+      }
+    ]
+  },
+  {
+    "id": "r05",
+    "query": "KSRTC student bus pass distance limit 60 km",
+    "expect_any": [
+      {
+        "pass_id": "ksrtc_student_pass"
+      },
+      {
+        "source_file": "03_ksrtc_and_shakti.md"
+      }
+    ]
+  },
+  {
+    "id": "r06",
+    "query": "Seva Sindhu application steps rejection",
+    "expect": {
+      "source_file": "05_applying_and_troubleshooting.md"
+    }
+  },
+  {
+    "id": "r07",
+    "query": "BMTC ordinary fare slabs after January 2025 revision",
+    "expect": {
+      "source_file": "04_fares_and_ticketing.md"
+    }
+  },
+  {
+    "id": "r08",
+    "query": "does Shakti work on AC buses",
+    "expect": {
+      "heading": "9. Does Shakti work on AC buses?"
+    }
+  },
+  {
+    "id": "r09",
+    "query": "metro student pass and BMRCL fares",
+    "expect": {
+      "source_file": "06_metro_and_multimodal.md"
+    }
+  },
+  {
+    "id": "r10",
+    "query": "Harohalli corridor KSRTC ordinary bus to Kanakapura",
+    "expect": {
+      "source_file": "03_ksrtc_and_shakti.md"
+    }
+  }
+]

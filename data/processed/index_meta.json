@@ -1,0 +1,7 @@
+{
+  "collection": "campustransit",
+  "count": 11624,
+  "embedding_backend": "chroma-default",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "built_at": "2026-10-30T16:37:23Z"
+}

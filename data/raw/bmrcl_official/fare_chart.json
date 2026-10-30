@@ -1,0 +1,122 @@
+[
+ {
+  "stations": 1,
+  "fare_inr": 10
+ },
+ {
+  "stations": 2,
+  "fare_inr": 10
+ },
+ {
+  "stations": 3,
+  "fare_inr": 20
+ },
+ {
+  "stations": 4,
+  "fare_inr": 20
+ },
+ {
+  "stations": 5,
+  "fare_inr": 30
+ },
+ {
+  "stations": 6,
+  "fare_inr": 30
+ },
+ {
+  "stations": 7,
+  "fare_inr": 40
+ },
+ {
+  "stations": 8,
+  "fare_inr": 40
+ },
+ {
+  "stations": 9,
+  "fare_inr": 50
+ },
+ {
+  "stations": 10,
+  "fare_inr": 50
+ },
+ {
+  "stations": 11,
+  "fare_inr": 60
+ },
+ {
+  "stations": 12,
+  "fare_inr": 60
+ },
+ {
+  "stations": 13,
+  "fare_inr": 60
+ },
+ {
+  "stations": 14,
+  "fare_inr": 60
+ },
+ {
+  "stations": 15,
+  "fare_inr": 60
+ },
+ {
+  "stations": 16,
+  "fare_inr": 70
+ },
+ {
+  "stations": 17,
+  "fare_inr": 70
+ },
+ {
+  "stations": 18,
+  "fare_inr": 70
+ },
+ {
+  "stations": 19,
+  "fare_inr": 70
+ },
+ {
+  "stations": 20,
+  "fare_inr": 70
+ },
+ {
+  "stations": 21,
+  "fare_inr": 80
+ },
+ {
+  "stations": 22,
+  "fare_inr": 80
+ },
+ {
+  "stations": 23,
+  "fare_inr": 80
+ },
+ {
+  "stations": 24,
+  "fare_inr": 80
+ },
+ {
+  "stations": 25,
+  "fare_inr": 80
+ },
+ {
+  "stations": 26,
+  "fare_inr": 90
+ },
+ {
+  "stations": 27,
+  "fare_inr": 90
+ },
+ {
+  "stations": 28,
+  "fare_inr": 90
+ },
+ {
+  "stations": 29,
+  "fare_inr": 90
+ },
+ {
+  "stations": 30,
+  "fare_inr": 90
+ }
+]

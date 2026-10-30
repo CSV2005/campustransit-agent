@@ -1,0 +1,4207 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-22T07:30:49Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 66677026,
+  "lat": 12.8298144,
+  "lon": 77.4127320,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Mysore Road",
+    "name": "Veeranjaneya Temple",
+    "name:kn": "ವೀರಾಂಜನೇಯ ದೇವಸ್ತಾನ"
+  }
+},
+{
+  "type": "node",
+  "id": 66677040,
+  "lat": 12.8226750,
+  "lon": 77.4110126,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "LAKSHMISAGARA",
+    "name": "Lakshmisagar Gate"
+  }
+},
+{
+  "type": "node",
+  "id": 66677130,
+  "lat": 12.7996321,
+  "lon": 77.3909676,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bidadi",
+    "name": "Railway Station",
+    "name:kn": "ರೈಲು ನಿಲ್ದಾಣ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 265520926,
+  "lat": 12.8382537,
+  "lon": 77.4026801,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Wonderla",
+    "name:kn": "ವಂಡರ್ಲಾ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 292563720,
+  "lat": 12.8432537,
+  "lon": 77.5107392,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "DODDA TATAGUNI",
+    "name": "Tataguni",
+    "name:kn": "ದೊಡ್ಡ ತಾತಗುಣಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 292563936,
+  "lat": 12.8440238,
+  "lon": 77.4942945,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "AGARA",
+    "name": "Swanandashrama Bus stop",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 292564012,
+  "lat": 12.8443568,
+  "lon": 77.4870329,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Agara",
+    "name:kn": "ಅಗರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 292564031,
+  "lat": 12.8422314,
+  "lon": 77.4837859,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Gangasandra",
+    "name": "Hosapallya",
+    "name:kn": "ಹೊಸಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 292564426,
+  "lat": 12.8256583,
+  "lon": 77.4493647,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Seegehalli Cross",
+    "name:kn": "ಸೀಗೆಹಳ್ಳಿ ಕ್ರಾಸ್",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 292564441,
+  "lat": 12.8187400,
+  "lon": 77.4525324,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Seegehalli",
+    "name:kn": "ಸೀಗೆಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 292564465,
+  "lat": 12.8124032,
+  "lon": 77.4497321,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Dodda Kuntanahalli",
+    "name:kn": "ದೊಡ್ಡ ಕುಂಟನಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 292564710,
+  "lat": 12.8490257,
+  "lon": 77.4513817,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Gonipura",
+    "name": "Eradu kamba",
+    "name:kn": "ಎರಡು ಕಂಬ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 292564924,
+  "lat": 12.8481674,
+  "lon": 77.4610162,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "GANGASANDRA",
+    "name": "Bgs College,B.G.S.International School"
+  }
+},
+{
+  "type": "node",
+  "id": 308179930,
+  "lat": 12.8115345,
+  "lon": 77.5844860,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Sarala Birla Academy",
+    "name:en": "Sarala Birla Academy",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 308180613,
+  "lat": 12.7946749,
+  "lon": 77.6200681,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Nisarga Gate",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 308180630,
+  "lat": 12.8024845,
+  "lon": 77.5964761,
+  "tags": {
+    "alt_name": "Jangal Palya",
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Mantapa Cross",
+    "name:en": "Mantapa Cross",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 308296519,
+  "lat": 12.8015038,
+  "lon": 77.4253140,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Gollarapalya",
+    "name:kn": "ಗೊಲ್ಲರಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 308719006,
+  "lat": 12.7979499,
+  "lon": 77.5208615,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vasudevapura",
+    "name:kn": "ವಾಸುದೇವಪುರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 313178845,
+  "lat": 12.7645682,
+  "lon": 77.4874168,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "HOSADODDI",
+    "name": "Hosa Doddi Gate",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 313178862,
+  "lat": 12.7410603,
+  "lon": 77.4883767,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "GANTAKANA DODDI",
+    "name": "Gantakanadoddi cross"
+  }
+},
+{
+  "type": "node",
+  "id": 313178873,
+  "lat": 12.7278647,
+  "lon": 77.4870368,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "KAGGALAHALLI",
+    "name": "Kagalahalli",
+    "name:kn": "ಕಗ್ಗಲಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 313178891,
+  "lat": 12.7133981,
+  "lon": 77.4815735,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "GABBADI",
+    "name": "New Gabadi",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 313178918,
+  "lat": 12.6835451,
+  "lon": 77.4724390,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Harohalli",
+    "name": "Petrolbunk",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 388469089,
+  "lat": 12.8426053,
+  "lon": 77.5178602,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Kuppa Reddy Kere",
+    "name:kn": "ಕುಪ್ಪಾರೆಡ್ಡಿ ಕೆರೆ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 388469098,
+  "lat": 12.8491937,
+  "lon": 77.5220679,
+  "tags": {
+    "alt_name": "Agara Cross",
+    "alt_name:kn": "ಅಗರ ಅಡ್ಡ",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Chinnayyanapalya Silk Farm",
+    "name:en": "Chinnayyanapalya Silk Farm",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 388469677,
+  "lat": 12.8251632,
+  "lon": 77.5137672,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Dayananda Sagar College",
+    "name:kn": "ದಯಾನಂದ ಸಾಗರ ಕಾಲೇಜು",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 388469690,
+  "lat": 12.8367727,
+  "lon": 77.5160345,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Shanimahathma Temple",
+    "name:kn": "ಶನಿ ಮಹಾತ್ಮ"
+  }
+},
+{
+  "type": "node",
+  "id": 388470002,
+  "lat": 12.8112779,
+  "lon": 77.5117083,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Saalu Hunase",
+    "name:kn": "ಸಾಲುಹುಣಸೆ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 388470022,
+  "lat": 12.8203216,
+  "lon": 77.5139901,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Udi Palya Udayapalya",
+    "name:kn": "ಉದಯಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 388470146,
+  "lat": 12.7857013,
+  "lon": 77.5022230,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "APS College Somanahalli",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 560654683,
+  "lat": 12.8294155,
+  "lon": 77.5877321,
+  "tags": {
+    "bench": "no",
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road",
+    "name": "AMC College",
+    "name:en": "AMC College",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 560654686,
+  "lat": 12.8254027,
+  "lon": 77.5863275,
+  "tags": {
+    "alt_name": "Jalli Machine",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road",
+    "name": "Sampangiram Nagara",
+    "name:en": "Sampangiram Nagara",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 654192210,
+  "lat": 12.8436030,
+  "lon": 77.3580481,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Borehalli",
+    "name:kn": "ಬೋರೆಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 819008613,
+  "lat": 12.5457168,
+  "lon": 77.4665408,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Chakanahalli Cross",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 971918911,
+  "lat": 12.7634471,
+  "lon": 77.3773061,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "HEGGADAGERE",
+    "name": "Heggada gere",
+    "name:kn": "ಹೆಗ್ಗಡಗೆರೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 1102896893,
+  "lat": 12.7967519,
+  "lon": 77.5017843,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "PATAREDDY PALYA",
+    "name": "Gandhinagara",
+    "name:kn": "ಗಾಂಧಿನಗರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1102897690,
+  "lat": 12.7944055,
+  "lon": 77.4892798,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Nowkal Palya",
+    "name:kn": "ನೌಕಲಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 1345825866,
+  "lat": 12.8228997,
+  "lon": 77.5286083,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Nallakkanadoddi",
+    "name:kn": "ನಲ್ಲಕ್ಕನದೊಡ್ಡಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1345825916,
+  "lat": 12.8350827,
+  "lon": 77.5270503,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "VADERAHALLI",
+    "name": "Vaddarapalya",
+    "name:kn": "ವಡ್ಡರಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1345826092,
+  "lat": 12.7982935,
+  "lon": 77.5260766,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "GULAKAMALE",
+    "name": "Nallakkanadoddi Cross"
+  }
+},
+{
+  "type": "node",
+  "id": 1345826135,
+  "lat": 12.8099119,
+  "lon": 77.5305143,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "NALAKKAN DODDI",
+    "name": "Nallakkanadoddi",
+    "name:kn": "ನಲ್ಲಕ್ಕನದೊಡ್ಡಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 1387796088,
+  "lat": 12.7898492,
+  "lon": 77.4414912,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "CHIKKA KUNTANAHALLI",
+    "name": "Anchipura Cross",
+    "name:kn": "ಅಂಚಿಪುರ ಅಡ್ಡ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1387796111,
+  "lat": 12.7994570,
+  "lon": 77.4374536,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Parasanapalya",
+    "name:kn": "ಪರಸನ ಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1387796171,
+  "lat": 12.8180200,
+  "lon": 77.4928871,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "UTTARI",
+    "name": "Utthari",
+    "name:kn": "ಉತ್ತರಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1387796190,
+  "lat": 12.8145530,
+  "lon": 77.4414172,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Thippuru",
+    "name:kn": "ತಿಪ್ಪೂರು",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1387796227,
+  "lat": 12.8071178,
+  "lon": 77.4292857,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "CHANNE GOWDANA DODDI",
+    "name": "Channegowdana Doddi",
+    "name:kn": "ಚನ್ನೆಗೌಡನ ದೊಡ್ಡಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1387796323,
+  "lat": 12.8216686,
+  "lon": 77.4441540,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Lingapura",
+    "name:kn": "ಲಿಂಗಾಪುರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1387796761,
+  "lat": 12.7825584,
+  "lon": 77.4527334,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "KODIYALA",
+    "name": "Kodipalya",
+    "name:kn": "ಕೋಡಿಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1387796763,
+  "lat": 12.8117171,
+  "lon": 77.4334706,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "THALAKUPPE",
+    "name": "Talaguppe",
+    "name:kn": "ತಾಳಕುಪ್ಪೆ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1387796855,
+  "lat": 12.6951988,
+  "lon": 77.4529774,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Meda Maranahalli Cross"
+  }
+},
+{
+  "type": "node",
+  "id": 1387796914,
+  "lat": 12.8180270,
+  "lon": 77.4899621,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "BADEKATTE",
+    "name": "Bade Katte",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1387796955,
+  "lat": 12.7936092,
+  "lon": 77.4383924,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Chikka Kuntanahalli",
+    "name:kn": "ಚಿಕ್ಕ ಕುಂಟನಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1414410787,
+  "lat": 12.7590689,
+  "lon": 77.4940941,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Nettigere",
+    "name:kn": "ನೆಟ್ಟಿಗೆರೆ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1414411605,
+  "lat": 12.7480936,
+  "lon": 77.4987126,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ravugodlu",
+    "name:kn": "ರಾವುಗೋಡ್ಲು",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1417534515,
+  "lat": 12.7008012,
+  "lon": 77.5131974,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Kadu Jakkasandra",
+    "name:kn": "ಕಾಡು ಜಕ್ಕಸಂದ್ರ"
+  }
+},
+{
+  "type": "node",
+  "id": 1417534600,
+  "lat": 12.7097838,
+  "lon": 77.5196627,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Sonnaredoddi",
+    "name:kn": "ಸೋನ್ನಾರೆದೊಡ್ಡಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 1417534703,
+  "lat": 12.7213793,
+  "lon": 77.5271476,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "GOTIGEHALLI",
+    "name": "Gottigehalli",
+    "name:kn": "ಗೊಟ್ಟಿಗೆಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 1417534739,
+  "lat": 12.7256322,
+  "lon": 77.5295205,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Gottigehalli",
+    "name": "Forest Gate"
+  }
+},
+{
+  "type": "node",
+  "id": 1417534914,
+  "lat": 12.7398456,
+  "lon": 77.5227799,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Nishane",
+    "name:kn": "ನಿಶಾನೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 1417535126,
+  "lat": 12.7459431,
+  "lon": 77.5233677,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "GIRIGOWDA DODDI",
+    "name": "Girigowdana Doddi",
+    "name:kn": "ಗಿರಿ ಗೌಡನ ದೊಡ್ಡಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 1417535574,
+  "lat": 12.7563615,
+  "lon": 77.5284294,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "MUKKODLU",
+    "name": "Mukkodlu",
+    "name:kn": "ಮುಕ್ಕೊಡ್ಲು"
+  }
+},
+{
+  "type": "node",
+  "id": 1417535718,
+  "lat": 12.7607119,
+  "lon": 77.5216351,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Girigowdana Doddi Cross"
+  }
+},
+{
+  "type": "node",
+  "id": 1417535771,
+  "lat": 12.7625478,
+  "lon": 77.5174579,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Rayara Doddi"
+  }
+},
+{
+  "type": "node",
+  "id": 1417536191,
+  "lat": 12.7722389,
+  "lon": 77.5287600,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "TATGUPPE",
+    "name": "Tattaguppe",
+    "name:kn": "ತಟ್ಟಗುಪ್ಪೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 1417536740,
+  "lat": 12.7853732,
+  "lon": 77.5341017,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Taralu Estate"
+  }
+},
+{
+  "type": "node",
+  "id": 1417537206,
+  "lat": 12.7892102,
+  "lon": 77.5223282,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "TARALU",
+    "name": "Taralu",
+    "name:kn": "ತರಲು"
+  }
+},
+{
+  "type": "node",
+  "id": 1837284442,
+  "lat": 12.8267018,
+  "lon": 77.5613418,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "SHANUBHOGANA HALLI",
+    "name": "Shanubhoganahalli",
+    "name:en": "Shanubhoganahalli",
+    "name:kn": "ಶಾನುಭೋಗನಹಳ್ಳಿ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1837284564,
+  "lat": 12.8400106,
+  "lon": 77.5806403,
+  "tags": {
+    "alt_name": "Maruthi Layout",
+    "highway": "bus_stop",
+    "name": "Maruthi Badavane",
+    "name:en": "Maruthi Badavane",
+    "name:kn": "ಮಾರುತಿ ಬಡಾವಣೆ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1914152934,
+  "lat": 12.8327396,
+  "lon": 77.5891907,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road",
+    "name": "Kalkere",
+    "name:en": "Kalkere",
+    "name:kn": "ಕಲ್ಕೆರೆ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 1915288565,
+  "lat": 12.8445150,
+  "lon": 77.5836650,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Weavers Colony",
+    "name:en": "Weavers Colony",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2128120761,
+  "lat": 12.6800753,
+  "lon": 77.4697313,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Harohalli",
+    "name:en": "Harohalli",
+    "name:kn": "ಹಾರೋಹಳ್ಳಿ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2140205529,
+  "lat": 12.8012215,
+  "lon": 77.3843360,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "BIDADI",
+    "name": "Avaragere Cross"
+  }
+},
+{
+  "type": "node",
+  "id": 2224306862,
+  "lat": 12.7227263,
+  "lon": 77.5019395,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "KAGGALAHALLI",
+    "name": "Rock Colony"
+  }
+},
+{
+  "type": "node",
+  "id": 2224307105,
+  "lat": 12.7238384,
+  "lon": 77.5149352,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "MUTHURAYANPURA",
+    "name": "Muttarayanapura",
+    "name:kn": "ಮುತ್ತರಾಯನಪುರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2224308005,
+  "lat": 12.7258289,
+  "lon": 77.5138299,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "MUTURAYANAPURA",
+    "name": "Muthurayapura Cross"
+  }
+},
+{
+  "type": "node",
+  "id": 2224308583,
+  "lat": 12.7279961,
+  "lon": 77.5070597,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "BETTAHALLI KAVAL",
+    "name": "Muthurayapura Cross"
+  }
+},
+{
+  "type": "node",
+  "id": 2224309506,
+  "lat": 12.7349525,
+  "lon": 77.5075260,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "BETTAHALLI KAVAL",
+    "name": "Betta Halli Kaval",
+    "name:kn": "ಬೆಟ್ಟಹಳ್ಳಿ ಕಾವಲ್"
+  }
+},
+{
+  "type": "node",
+  "id": 2224311798,
+  "lat": 12.7494463,
+  "lon": 77.5122870,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "RAVGODLU",
+    "name": "Gundanjaneya Swamy Temple",
+    "name:kn": "ಗುಂಡಾಜನೇಯ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನ"
+  }
+},
+{
+  "type": "node",
+  "id": 2224699920,
+  "lat": 12.6927798,
+  "lon": 77.4253525,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Honnalagana Doddi",
+    "name:kn": "ಹೊನ್ನಲಗನ ದೊಡ್ಡಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2224699979,
+  "lat": 12.6931791,
+  "lon": 77.4067447,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Kadasikoppa",
+    "name:kn": "ಕಡಸಿಕೊಪ್ಪ"
+  }
+},
+{
+  "type": "node",
+  "id": 2224700220,
+  "lat": 12.7054506,
+  "lon": 77.4294481,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Yarehalli",
+    "name:kn": "ಯರೆಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2224700367,
+  "lat": 12.7119415,
+  "lon": 77.4069926,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "KOLIGANAHALLI",
+    "name": "Kolliganahalli",
+    "name:kn": "ಕೊಳ್ಳಿಗನಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2224700838,
+  "lat": 12.7283574,
+  "lon": 77.4026953,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "M.GOPALHALLI",
+    "name": "Megala Gopahalli",
+    "name:kn": "ಮೇಗಳ ಗೋಪಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2227485958,
+  "lat": 12.6999103,
+  "lon": 77.3846074,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Annihalli",
+    "name:kn": "ಅಣ್ಣಿಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2227487700,
+  "lat": 12.7328002,
+  "lon": 77.4401673,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "KEMPAIAHAN PALYA",
+    "name": "Kempaiahanapalya Cross",
+    "name:kn": "ಕೆಂಪಯ್ಯನಪಾಳ್ಯ ಅಡ್ಡ"
+  }
+},
+{
+  "type": "node",
+  "id": 2227770970,
+  "lat": 12.7380104,
+  "lon": 77.4113986,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Chowkahalli",
+    "name:kn": "ಚೌಕಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2228190829,
+  "lat": 12.7230834,
+  "lon": 77.4841784,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Muthugadahalli Cross",
+    "name:kn": "ಮುತುಗದಹಳ್ಳಿ ಕ್ರಾಸ್"
+  }
+},
+{
+  "type": "node",
+  "id": 2228190954,
+  "lat": 12.7252153,
+  "lon": 77.4803560,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Muthugadahalli",
+    "name:kn": "ಮುತುಗದಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2228191112,
+  "lat": 12.7279330,
+  "lon": 77.4676482,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Managanahalli",
+    "name:kn": "ಮನಗನಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2228191235,
+  "lat": 12.7323747,
+  "lon": 77.4537983,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "ARALALSANDRA",
+    "name": "Allalasandra Cross",
+    "name:kn": "ಅಳ್ಳಾಲಸಂದ್ರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2228191322,
+  "lat": 12.7331707,
+  "lon": 77.4546995,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "ARALALSANDRA",
+    "name": "Allalasandra",
+    "name:kn": "ಅಳ್ಳಾಲಸಂದ್ರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2228191679,
+  "lat": 12.7361955,
+  "lon": 77.4736973,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Bokipura",
+    "name:kn": "ಬೋಕಿಪುರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2228192114,
+  "lat": 12.7409237,
+  "lon": 77.4810729,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "VADERAHALLI",
+    "name": "Vaderahalli",
+    "name:kn": "ವಡೇರಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2228192358,
+  "lat": 12.7427395,
+  "lon": 77.4488698,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Hosuru",
+    "name:kn": "ಹೊಸೂರು"
+  }
+},
+{
+  "type": "node",
+  "id": 2228192520,
+  "lat": 12.7432873,
+  "lon": 77.4629165,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "KARIKALDODDI",
+    "name": "Allalasandra",
+    "name:kn": "ಅಳ್ಳಾಲಸಂದ್ರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2228192560,
+  "lat": 12.7439839,
+  "lon": 77.4789928,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "TOKATHIMANA DODDI",
+    "name": "Thokathimmanadoddi Cross"
+  }
+},
+{
+  "type": "node",
+  "id": 2228192950,
+  "lat": 12.7482219,
+  "lon": 77.4472926,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "KODIDODDI PALYA",
+    "name": "Kodipalya",
+    "name:kn": "ಕೋಡಿಪಾಳ್ಯ",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2230721795,
+  "lat": 12.8389969,
+  "lon": 77.3274761,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Rampura",
+    "name:kn": "ರಾಂಪುರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2230918800,
+  "lat": 12.8207832,
+  "lon": 77.3223840,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "KATAMANA DODDI",
+    "name": "Katammana Doddi",
+    "name:kn": "ಕಾಟಮ್ಮನದೊಡ್ಡಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2230919866,
+  "lat": 12.8337541,
+  "lon": 77.3441453,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Guddadahalli Dinne",
+    "name:kn": "ಗುಡ್ಡದಹಳ್ಳಿ ದಿನ್ನೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 2250764818,
+  "lat": 12.8047274,
+  "lon": 77.5049727,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "KAGLIPURA",
+    "name": "Kaggalipura Colony",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2250764997,
+  "lat": 12.8204781,
+  "lon": 77.5224844,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "O.B.CHUDAHALLI",
+    "name": "Gulaka Malai",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2250765075,
+  "lat": 12.8313708,
+  "lon": 77.5004868,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Basapanpalya",
+    "name:kn": "ಬಸಪ್ಪನಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2250832215,
+  "lat": 12.7722038,
+  "lon": 77.5037232,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Somanahalli",
+    "name:kn": "ಸೋಮನಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2251858265,
+  "lat": 12.8202858,
+  "lon": 77.3808516,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Avaragere",
+    "name:kn": "ಅವರಗೆರೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 2251858273,
+  "lat": 12.8254821,
+  "lon": 77.3821470,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "AVARAGERE",
+    "name": "Vajarahalli Cross"
+  }
+},
+{
+  "type": "node",
+  "id": 2251858424,
+  "lat": 12.8389951,
+  "lon": 77.3995252,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Hakki Pikki Colony Cross",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2251858452,
+  "lat": 12.8397391,
+  "lon": 77.3955207,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jadenahalli",
+    "name:kn": "ಜಡೇನಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2251858484,
+  "lat": 12.8415328,
+  "lon": 77.3926769,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Thimmappana Palya",
+    "name:kn": "ತಿಮ್ಮಪ್ಪನ ಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2251858586,
+  "lat": 12.8471828,
+  "lon": 77.3838508,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Bannikuppe",
+    "name:kn": "ಬನ್ನಿಕುಪ್ಪೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 2251945029,
+  "lat": 12.8133350,
+  "lon": 77.3904944,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "KITHIGANAHALLI",
+    "name": "Ketaganahalli",
+    "name:kn": "ಕೇತಗನಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2252008255,
+  "lat": 12.8451436,
+  "lon": 77.4009297,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Hakki Pikki Colony",
+    "name:kn": "ಹಕ್ಕಿ ಪಿಕ್ಕಿ ಕಾಲೋನಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2252008273,
+  "lat": 12.8497459,
+  "lon": 77.4159428,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "HEJJALA",
+    "name": "Devalingayyana Palya",
+    "name:kn": "ದೇವಲಿಂಗಯ್ಯನಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 2287929095,
+  "lat": 12.7574619,
+  "lon": 77.3982225,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Thoredoddi",
+    "name:kn": "ತೊರೆದೊಡ್ಡಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2393590198,
+  "lat": 12.8156894,
+  "lon": 77.4076601,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "KADUMANE",
+    "name": "Kadumane Hotel",
+    "name:kn": "ಕಾಡುಮನೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 2393616692,
+  "lat": 12.8436969,
+  "lon": 77.4210532,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Mysore Road,SHESHAGIRIHALLI",
+    "name": "Sheshagiri Halli",
+    "name:kn": "ಶೇಷಗಿರಿಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2393616710,
+  "lat": 12.8225183,
+  "lon": 77.4104631,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "LAKSHMISAGARA",
+    "name": "Lakshmisagar Gate",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2393616793,
+  "lat": 12.8438488,
+  "lon": 77.4215850,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Mysore Road,SHESHAGIRIHALLI",
+    "name": "Sheshagiri Halli",
+    "name:kn": "ಶೇಷಗಿರಿಹಳ್ಳಿ",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2393694485,
+  "lat": 12.8156931,
+  "lon": 77.4074981,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "KADUMANE",
+    "name": "Kadumane Hotel",
+    "name:kn": "ಕಾಡುಮನೆ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2393700399,
+  "lat": 12.7997785,
+  "lon": 77.3907557,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bidadi",
+    "name": "Railway Station",
+    "name:kn": "ರೈಲು ನಿಲ್ದಾಣ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2393700403,
+  "lat": 12.8035626,
+  "lon": 77.3981197,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "BIDADI",
+    "name": "Byramangala Cross",
+    "name:kn": "ಬೈರಮಂಗಲ ಕ್ರಾಸ್",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2393704701,
+  "lat": 12.7968079,
+  "lon": 77.3845511,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bidadi",
+    "name:kn": "ಬಿಡದಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2393718813,
+  "lat": 12.7772754,
+  "lon": 77.3977885,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Bananduru",
+    "name:kn": "ಬಾನಂದೂರು"
+  }
+},
+{
+  "type": "node",
+  "id": 2393971522,
+  "lat": 12.8036044,
+  "lon": 77.3983334,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "BIDADI",
+    "name": "Byramangala Cross",
+    "name:kn": "ಬೈರಮಂಗಲ ಕ್ರಾಸ್"
+  }
+},
+{
+  "type": "node",
+  "id": 2396119723,
+  "lat": 12.7966117,
+  "lon": 77.3846242,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bidadi",
+    "name:kn": "ಬಿಡದಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410111762,
+  "lat": 12.8333438,
+  "lon": 77.5137889,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Lakshmipura",
+    "name:kn": "ಲಕ್ಷ್ಮಿಪುರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2410112552,
+  "lat": 12.8301684,
+  "lon": 77.5130550,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Saala Doddi"
+  }
+},
+{
+  "type": "node",
+  "id": 2410114855,
+  "lat": 12.8001372,
+  "lon": 77.5082934,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Kaggalipura",
+    "name:en": "Kaggalipura",
+    "name:kn": "ಕಗ್ಗಲಿಪುರ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410116985,
+  "lat": 12.7900321,
+  "lon": 77.5044125,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Gandhinagara Kaggalipura",
+    "name:kn": "ಗಾಂಧಿನಗರ ಕಗ್ಗಲಿಪುರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410119253,
+  "lat": 12.7823184,
+  "lon": 77.4994431,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "KEB Office Somanahalli",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410121038,
+  "lat": 12.7804293,
+  "lon": 77.4967485,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Somanahalli gate",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410530194,
+  "lat": 12.8180141,
+  "lon": 77.5206294,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vasudevapura",
+    "name:kn": "ವಾಸುದೇವಪುರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410534094,
+  "lat": 12.7822519,
+  "lon": 77.4894448,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "KERECHUDA HALLI",
+    "name": "Chudahalli",
+    "name:kn": "ಚೂಡಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410534162,
+  "lat": 12.7923540,
+  "lon": 77.4777332,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "NAGANAYAKANA HALLI",
+    "name": "Naganayakanahalli",
+    "name:kn": "ನಾಗನಾಯಕನಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410534165,
+  "lat": 12.7887297,
+  "lon": 77.4837065,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "KERECHUDA HALLI",
+    "name": "Aladamara",
+    "name:kn": "ಆಲದಮರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410534959,
+  "lat": 12.7958250,
+  "lon": 77.4740076,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Mallipalya",
+    "name:kn": "ಮಲ್ಲಿಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410535132,
+  "lat": 12.7741183,
+  "lon": 77.4920344,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "NELAGULI",
+    "name": "Nellagulli Cross",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410535277,
+  "lat": 12.7747802,
+  "lon": 77.4784485,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "NELAGULI",
+    "name": "Sundaram Estate",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410535515,
+  "lat": 12.7824994,
+  "lon": 77.4688298,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "KADIRENAHALLI",
+    "name": "Karenahalli",
+    "name:kn": "ಕರೇನಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410867160,
+  "lat": 12.7941412,
+  "lon": 77.4838084,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Gudipalya",
+    "name:kn": "ಗುಡಿಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 2410878227,
+  "lat": 12.7612292,
+  "lon": 77.4865598,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "NETTIGERE",
+    "name": "Nettigere Gate",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410878228,
+  "lat": 12.7542962,
+  "lon": 77.4847004,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bolare",
+    "name:kn": "ಬೊಲಾರೆ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410878855,
+  "lat": 12.7491919,
+  "lon": 77.4864717,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "RAVGODLU",
+    "name": "Ravogodlu gate"
+  }
+},
+{
+  "type": "node",
+  "id": 2410880671,
+  "lat": 12.7029962,
+  "lon": 77.4809459,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kembepalya",
+    "name:kn": "ಕೆಂಬೆಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410881786,
+  "lat": 12.6980634,
+  "lon": 77.4785201,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Harohalli Depot",
+    "name:kn": "ಹಾರೋಹಳ್ಳಿ ಡಿಪೋ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410897988,
+  "lat": 12.7920171,
+  "lon": 77.4388970,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Shanumangala Cross",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410898164,
+  "lat": 12.7949408,
+  "lon": 77.4320021,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "SHYANUMANGALA",
+    "name": "Shanumangala",
+    "name:kn": "ಶಾನುಮಂಗಲ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2410899478,
+  "lat": 12.8105131,
+  "lon": 77.4163524,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Eagleton Gate",
+    "name:kn": "ಈಗಲ್ಟನ್",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2411243898,
+  "lat": 12.7924856,
+  "lon": 77.4608619,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Narayanapura",
+    "name:kn": "ನಾರಾಯಣಪುರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2411246538,
+  "lat": 12.7969777,
+  "lon": 77.4642613,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "NARAYANAPURA",
+    "name": "Kattalepalya",
+    "name:kn": "ಕತ್ತಲೆಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 2411252443,
+  "lat": 12.7811904,
+  "lon": 77.4394225,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "JOGANAPALYA",
+    "name": "Jogana Palya",
+    "name:kn": "ಜೋಗನ ಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2411252472,
+  "lat": 12.7673832,
+  "lon": 77.4388688,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "ANCHIPURA",
+    "name": "Anchipura Colony",
+    "name:kn": "ಅಂಚಿಪುರ ಕಾಲೋನಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2412196354,
+  "lat": 12.8305974,
+  "lon": 77.4856477,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "BANJARPALYA",
+    "name": "Banjarapalya",
+    "name:kn": "ಬಂಜಾರಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2412201281,
+  "lat": 12.8463637,
+  "lon": 77.4705664,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Gangasandra",
+    "name:kn": "ಗಂಗಸಂದ್ರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2412202587,
+  "lat": 12.8466337,
+  "lon": 77.4624613,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Gangasandra",
+    "name": "BGS College Gate"
+  }
+},
+{
+  "type": "node",
+  "id": 2412206462,
+  "lat": 12.8433644,
+  "lon": 77.4515227,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "K.GOLLAHALLI",
+    "name": "Gollahalli",
+    "name:kn": "ಗೋಲ್ಲಹಳ್ಲಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2412208461,
+  "lat": 12.8323434,
+  "lon": 77.4510969,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Gonipura",
+    "name:kn": "ಗೋಣಿಪುರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2413457059,
+  "lat": 12.8217557,
+  "lon": 77.4604137,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Thittahalli",
+    "name:kn": "ತಿಟ್ಟಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2413459462,
+  "lat": 12.8194527,
+  "lon": 77.4607345,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "MRV Bricks Factory"
+  }
+},
+{
+  "type": "node",
+  "id": 2413496700,
+  "lat": 12.8474259,
+  "lon": 77.4688917,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "GANGASANDRA",
+    "name": "BGS College Cross",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2413530194,
+  "lat": 12.7472328,
+  "lon": 77.4333103,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "BANIGIRI",
+    "name": "Bannigiri",
+    "name:kn": "ಬನ್ನಿಗಿರಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2413531726,
+  "lat": 12.7486995,
+  "lon": 77.4285800,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "BYRAMANGALA",
+    "name": "Matada Bailu"
+  }
+},
+{
+  "type": "node",
+  "id": 2413532442,
+  "lat": 12.7488172,
+  "lon": 77.4244934,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Byramangala",
+    "name:kn": "ಬೈರಮಂಗಲ"
+  }
+},
+{
+  "type": "node",
+  "id": 2413536015,
+  "lat": 12.7203846,
+  "lon": 77.4295124,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "KEMPAIAHAN PALYA",
+    "name": "Kempaiahana Palya",
+    "name:kn": "ಕೆಂಪಯ್ಯನ ಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 2414662589,
+  "lat": 12.7504657,
+  "lon": 77.4730145,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "JATTIPALYA",
+    "name": "Jettipalya",
+    "name:kn": "ಜೆಟ್ಟಿಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2414662997,
+  "lat": 12.7482539,
+  "lon": 77.4798790,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "TOKATHIMANA DODDI",
+    "name": "Thokathimmanadoddi",
+    "name:kn": "ತೊಕತಿಮ್ಮನದೊಡ್ಡಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2414706550,
+  "lat": 12.7621096,
+  "lon": 77.4702763,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "K.G.GOLLARA PALYA",
+    "name": "Apco Factory",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2414711612,
+  "lat": 12.7535200,
+  "lon": 77.4521834,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "H.GOLLAHALLI",
+    "name": "Gollahalli",
+    "name:kn": "ಗೊಲ್ಲಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2414716433,
+  "lat": 12.7539386,
+  "lon": 77.4475539,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Gollahalli",
+    "name": "Kodi Palya Cross",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2414719389,
+  "lat": 12.7562454,
+  "lon": 77.4363965,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "BANIGIRI",
+    "name": "Bannigiri",
+    "name:kn": "ಬನ್ನಿಗಿರಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2414752538,
+  "lat": 12.7161535,
+  "lon": 77.4770773,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "GABBADI",
+    "name": "Halegabbadi",
+    "name:kn": "ಹಳೆಗಬ್ಬಾಡಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2415690158,
+  "lat": 12.7654624,
+  "lon": 77.4837514,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "HOSADODDI",
+    "name": "Hosa Doddi",
+    "name:kn": "ಹೊಸ ದೊಡ್ಡಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2415729577,
+  "lat": 12.7337707,
+  "lon": 77.4607542,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Hugara Palya",
+    "name:kn": "ಹೂಗಾರ ಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 2415731328,
+  "lat": 12.7239541,
+  "lon": 77.4461899,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Kanchugaranahalli",
+    "name:kn": "ಕಂಚುಗಾರನಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2415732494,
+  "lat": 12.7104933,
+  "lon": 77.4262308,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Tayappana Doddi",
+    "name:kn": "ತಾಯಪ್ಪನ ದೊಡ್ಡಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2415739402,
+  "lat": 12.7680290,
+  "lon": 77.4885449,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sadanapalya gate",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2415739437,
+  "lat": 12.7687806,
+  "lon": 77.4829138,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sadanapalya",
+    "name:kn": "ಸಾದನಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2415741737,
+  "lat": 12.7567375,
+  "lon": 77.4806078,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Veerasandra",
+    "name:kn": "ವೀರಸಂದ್ರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2415754953,
+  "lat": 12.7977364,
+  "lon": 77.5241965,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "GULAKAMALE",
+    "name": "Gulaka Malai"
+  }
+},
+{
+  "type": "node",
+  "id": 2415756267,
+  "lat": 12.7663591,
+  "lon": 77.5284248,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "GADIPALYA",
+    "name": "Gadipalya",
+    "name:kn": "ಗಾಡಿ ಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 2415758517,
+  "lat": 12.7483985,
+  "lon": 77.5364442,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "MUNI NAGARA",
+    "name": "Muninagara",
+    "name:kn": "ಮಣಿನಗರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2415761267,
+  "lat": 12.7319037,
+  "lon": 77.5219184,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "GOTTIGEHALLI",
+    "name": "Srirama Temple",
+    "name:kn": "ಶ್ರೀರಾಮ ದೇವಸ್ಥಾನ"
+  }
+},
+{
+  "type": "node",
+  "id": 2415762807,
+  "lat": 12.7295708,
+  "lon": 77.5470894,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "MUKKODLU",
+    "name": "Gullahatti Kaval",
+    "name:kn": "ಗುಳ್ಳಹಟ್ಟಿ ಕಾವಲ್"
+  }
+},
+{
+  "type": "node",
+  "id": 2415790342,
+  "lat": 12.8395442,
+  "lon": 77.5496693,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "AMRUTH NAGARA",
+    "name": "Amruth Nagara",
+    "name:kn": "ಅಮೃತನಗರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2416353512,
+  "lat": 12.8450136,
+  "lon": 77.5578836,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Tulasipura",
+    "name:en": "Tulasipura",
+    "name:kn": "ತುಲಸಿಪುರ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2416392187,
+  "lat": 12.8326743,
+  "lon": 77.5529600,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kulumepalya",
+    "name:en": "Kulumepalya",
+    "name:kn": "ಕುಲುಮೆ ಪಾಳ್ಯ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417282173,
+  "lat": 12.8162708,
+  "lon": 77.5508276,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "BYATARAYANA DODDI",
+    "name": "Byatarayana Doddi Cross"
+  }
+},
+{
+  "type": "node",
+  "id": 2417282230,
+  "lat": 12.8225001,
+  "lon": 77.5570748,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "KANCHAGAYANADODDI",
+    "name": "Kenchanayakanadoddi"
+  }
+},
+{
+  "type": "node",
+  "id": 2417282843,
+  "lat": 12.8362516,
+  "lon": 77.5767564,
+  "tags": {
+    "alt_name": "Bilwarada Halli",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bilavaradahalli",
+    "name": "Bilavaradahalli",
+    "name:en": "Bilavaradahalli",
+    "name:kn": "ಬಿಲ್ವಾರದಹಳ್ಳಿ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417283052,
+  "lat": 12.8413015,
+  "lon": 77.5886734,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road,KALKERE",
+    "name": "Koli Farm Gate",
+    "name:en": "Koli Farm Gate",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2417283678,
+  "lat": 12.8346247,
+  "lon": 77.5891575,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road",
+    "name": "Tulip Resort Cross",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417284751,
+  "lat": 12.8156657,
+  "lon": 77.5832022,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Banneragatta Circle",
+    "name": "Vijaya Bank Bannerughatta",
+    "name:en": "Vijaya Bank Bannerughatta",
+    "name:kn": "ವಿಜಯ ಬ್ಯಾಂಕು",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417381538,
+  "lat": 12.7987987,
+  "lon": 77.6009812,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Mantapa Cross"
+  }
+},
+{
+  "type": "node",
+  "id": 2417383224,
+  "lat": 12.7978222,
+  "lon": 77.6037363,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Begihalli",
+    "name:en": "Begihalli",
+    "name:kn": "ಬೇಗಿಹಳ್ಳಿ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417384554,
+  "lat": 12.7964070,
+  "lon": 77.6158042,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Koppa Gate",
+    "name:en": "Koppa Gate",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417385346,
+  "lat": 12.7919251,
+  "lon": 77.6232997,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Harapanahalli",
+    "name:en": "Harapanahalli",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417385676,
+  "lat": 12.7874886,
+  "lon": 77.6328992,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Jigani Tent",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417385843,
+  "lat": 12.7844194,
+  "lon": 77.6401008,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Jigani",
+    "name:kn": "ಜಿಗಣಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417385898,
+  "lat": 12.7792774,
+  "lon": 77.6435615,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "JIGANI HOBLI",
+    "name": "Jigani Bus Stand",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417385972,
+  "lat": 12.7763471,
+  "lon": 77.6451729,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Jigani",
+    "name": "KEB",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417387052,
+  "lat": 12.7721552,
+  "lon": 77.6484691,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Open Area",
+    "name": "Madapatna",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417400022,
+  "lat": 12.8114530,
+  "lon": 77.4923823,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "DINNE PALYA",
+    "name": "Dinnepalya",
+    "name:kn": "ದಿನ್ನೆಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2417401854,
+  "lat": 12.8245059,
+  "lon": 77.4845607,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Thimmegowdana Palya",
+    "name:kn": "ತಿಮ್ಮೆಗೌಡನ ಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2419617059,
+  "lat": 12.8343257,
+  "lon": 77.4146461,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Manchanayakanahalli Gate",
+    "name:kn": "ಮಂಚನಾಯಕನಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2419617060,
+  "lat": 12.8346215,
+  "lon": 77.4140239,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Manchanayakanahalli Gate",
+    "name:kn": "ಮಂಚನಾಯಕನಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2419617396,
+  "lat": 12.8297726,
+  "lon": 77.4123046,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Mysore Road",
+    "name": "Veeranjaneya Temple",
+    "name:kn": "ವೀರಾಂಜನೇಯ ದೇವಸ್ತಾನ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2419621485,
+  "lat": 12.8102832,
+  "lon": 77.4064424,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "BILLA KEMPANAHALLI",
+    "name": "Billa Kempanahalli",
+    "name:kn": "ಬಿಲ್ಲ ಕೆಂಪನಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2419623716,
+  "lat": 12.8307318,
+  "lon": 77.4289288,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Hampapura",
+    "name:kn": "ಹಂಪಾಪುರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2419628445,
+  "lat": 12.8366277,
+  "lon": 77.4104438,
+  "tags": {
+    "alt_name": "School Manchanayakanahalli",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Manchanayakanahalli",
+    "name": "J. U. Industrial Training Institute",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2419635118,
+  "lat": 12.8239118,
+  "lon": 77.3915680,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "VAJARAHALLI",
+    "name": "Vajara Halli",
+    "name:kn": "ವಾಜರಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2419892709,
+  "lat": 12.8025383,
+  "lon": 77.3864275,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "BIDADI",
+    "name": "KHB Colony"
+  }
+},
+{
+  "type": "node",
+  "id": 2419905028,
+  "lat": 12.8121239,
+  "lon": 77.4040288,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "BILLA KEMPANAHALLI",
+    "name": "Billakempanahalli",
+    "name:kn": "ಬಿಲ್ಲಕೆಂಪನಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2419905029,
+  "lat": 12.8119936,
+  "lon": 77.4038060,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "BILLA KEMPANAHALLI",
+    "name": "Billakempana Halli",
+    "name:kn": "ಬಿಲ್ಲಕೆಂಪನಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2419929944,
+  "lat": 12.8179332,
+  "lon": 77.3657068,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Karenahalli",
+    "name:kn": "ಕರೇನಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2419945516,
+  "lat": 12.8062693,
+  "lon": 77.4381570,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bychohalli",
+    "name:kn": "ಬೈಚೋಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2419950303,
+  "lat": 12.8049754,
+  "lon": 77.4223172,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "PICHAKUNTARAPALYA",
+    "name": "Pichaguntarya Palya",
+    "name:kn": "ಪಿಚ್ಚಕುಂಟರಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2419951278,
+  "lat": 12.7702350,
+  "lon": 77.4320434,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Anchipura",
+    "name:kn": "ಅಂಚಿಪುರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2419956189,
+  "lat": 12.7954610,
+  "lon": 77.3752494,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "KENCHANAKUPPE",
+    "name": "Kenchanakuppe",
+    "name:kn": "ಕೆಂಚನಕುಪ್ಪೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 2419965307,
+  "lat": 12.7566154,
+  "lon": 77.4045923,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Ittamadu",
+    "name:kn": "ಇಟ್ಟಮಡು"
+  }
+},
+{
+  "type": "node",
+  "id": 2419965324,
+  "lat": 12.7416832,
+  "lon": 77.4016270,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Ramanahalli",
+    "name:kn": "ರಾಮನಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2419969441,
+  "lat": 12.7019366,
+  "lon": 77.3932514,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "DOMBARA DODDI",
+    "name": "Dombaradoddi",
+    "name:kn": "ದೊಂಬರದೊಡ್ಡಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2419982478,
+  "lat": 12.7434787,
+  "lon": 77.3775248,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "URAGAHALLI",
+    "name": "Uragahalli Bidadi",
+    "name:kn": "ಶ್ರೀರಾಮಪುರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2419984954,
+  "lat": 12.7372096,
+  "lon": 77.3807096,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "MANCHEGOWDANA PALYA",
+    "name": "Seebakatte",
+    "name:kn": "ಸೀಬಕಟ್ಟೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 2419984956,
+  "lat": 12.7337243,
+  "lon": 77.3812966,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Manchegowdana Palya",
+    "name:kn": "ಮಂಚೆಗೌಡನಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 2420749018,
+  "lat": 12.8487869,
+  "lon": 77.3302564,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Hagalahalli",
+    "name:kn": "ಹಾಗಲಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2420766859,
+  "lat": 12.8305931,
+  "lon": 77.3247431,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Kaggalahalli",
+    "name:kn": "ಕಗ್ಗಲಹಳ್ಳಿ"
+  }
+},
+{
+  "type": "node",
+  "id": 2420769366,
+  "lat": 12.7994775,
+  "lon": 77.3191938,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sugganahalli",
+    "name:kn": "ಸುಗ್ಗನಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 2420770669,
+  "lat": 12.8009975,
+  "lon": 77.3146470,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Sugganahalli Circle",
+    "name:kn": "ಸುಗ್ಗನಹಳ್ಳಿ ವೃತ್ತ"
+  }
+},
+{
+  "type": "node",
+  "id": 2420883322,
+  "lat": 12.8443722,
+  "lon": 77.4453831,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "K.GOLLAHALLI",
+    "name": "Kenchanapalya",
+    "name:kn": "ಕೆಂಚನಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 2420883344,
+  "lat": 12.8468691,
+  "lon": 77.4471008,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "K.GOLLAHALLI",
+    "name": "Kallegoudana Palya",
+    "name:kn": "ಕಲ್ಲೇಗೌಡನ ಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 2420894641,
+  "lat": 12.8408987,
+  "lon": 77.4700551,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "HOSAPALYA COLONY",
+    "name": "Gaviyana Palya",
+    "name:kn": "ಗವಿಯನ ಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 2420897220,
+  "lat": 12.8244819,
+  "lon": 77.4898900,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "THIMMEGOWDAN PALYA",
+    "name": "Aladamara",
+    "name:kn": "ಆಲದಮರ"
+  }
+},
+{
+  "type": "node",
+  "id": 2420917159,
+  "lat": 12.8486044,
+  "lon": 77.3672890,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Muthurayanagudi Palya",
+    "name:kn": "ಮುತ್ತರಾಯನಗುಡಿಪಾಳ್ಯ"
+  }
+},
+{
+  "type": "node",
+  "id": 3793021126,
+  "lat": 12.6739439,
+  "lon": 77.3242721,
+  "tags": {
+    "covered": "no",
+    "highway": "bus_stop",
+    "name": "Gowdayyanadoddi Bus Stop",
+    "name:kn": "ಗೌಡಯ್ಯನದೊಡ್ಡಿ",
+    "operator": "KSRTC and Private bus service",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3799002977,
+  "lat": 12.7968405,
+  "lon": 77.3835939,
+  "tags": {
+    "highway": "bus_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 3799002979,
+  "lat": 12.7901113,
+  "lon": 77.3762089,
+  "tags": {
+    "highway": "bus_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 3799002981,
+  "lat": 12.7713278,
+  "lon": 77.3548055,
+  "tags": {
+    "highway": "bus_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 3799002983,
+  "lat": 12.7682300,
+  "lon": 77.3351656,
+  "tags": {
+    "highway": "bus_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 4737499963,
+  "lat": 12.7739716,
+  "lon": 77.4096801,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Abbanakuppe",
+    "name:en": "Abbanakuppe",
+    "name:kn": "ಅಬ್ಬನಕುಪ್ಪೆ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 5558684051,
+  "lat": 12.8415069,
+  "lon": 77.3927479,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Thimmappana Palya",
+    "name:kn": "ತಿಮ್ಮಪ್ಪನ ಪಾಳ್ಯ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 6313835445,
+  "lat": 12.6719447,
+  "lon": 77.5391655,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Goduru",
+    "name:kn": "ಗೋದೂರು",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7141213420,
+  "lat": 12.8135824,
+  "lon": 77.5810195,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Bannerughatta Circle",
+    "name:en": "Bannerughatta Circle",
+    "name:kn": "ಬನ್ನೇರುಘಟ್ಟ ವೃತ್ತ",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7141213421,
+  "lat": 12.8007292,
+  "lon": 77.5776748,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "bus_stop",
+    "name": "Bannerughatta National Park",
+    "name:en": "Bannerughatta National Park",
+    "name:kn": "ಬನ್ನೇರುಘಟ್ಟ ರಾಷ್ಟ್ರೀಯ ಉದ್ಯಾನವನ",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7141213423,
+  "lat": 12.8056079,
+  "lon": 77.5789744,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sampigehalli",
+    "name:en": "Sampigehalli",
+    "name:kn": "ಸಂಪಿಗೆಹಳ್ಳಿ",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7141213425,
+  "lat": 12.8157120,
+  "lon": 77.5831061,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Banneragatta Circle",
+    "name": "Vijaya Bank Bannerughatta",
+    "name:en": "Vijaya Bank Bannerughatta",
+    "name:kn": "ವಿಜಯ ಬ್ಯಾಂಕು",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 7141213427,
+  "lat": 12.8190924,
+  "lon": 77.5848348,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ryan International School",
+    "name:en": "Ryan International School",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7141213429,
+  "lat": 12.8294848,
+  "lon": 77.5875575,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road",
+    "name": "AMC College",
+    "name:en": "AMC College",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7141213433,
+  "lat": 12.8461540,
+  "lon": 77.5883406,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Basavanapura Gate",
+    "name:en": "Basavanapura Gate",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7259943599,
+  "lat": 12.7980047,
+  "lon": 77.6037105,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Begihalli",
+    "name:en": "Begihalli",
+    "name:kn": "ಬೇಗಿಹಳ್ಳಿ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7259943604,
+  "lat": 12.7986962,
+  "lon": 77.6014557,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Mantapa Cross",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7259943613,
+  "lat": 12.8027613,
+  "lon": 77.5964946,
+  "tags": {
+    "alt_name": "Jangal Palya",
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Mantapa Cross",
+    "name:en": "Mantapa Cross",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7259943630,
+  "lat": 12.8117316,
+  "lon": 77.5844602,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Sarala Birla Academy",
+    "name:en": "Sarala Birla Academy",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 7259994462,
+  "lat": 12.8345371,
+  "lon": 77.5894094,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road",
+    "name": "Tulip Resort Cross"
+  }
+},
+{
+  "type": "node",
+  "id": 7396735761,
+  "lat": 12.8274696,
+  "lon": 77.4595899,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "CHINNAKURCHI",
+    "name": "Chinkurchi",
+    "name:kn": "ಚಿನ್ನಕುರ್ಚಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 10083914231,
+  "lat": 12.8254804,
+  "lon": 77.5861467,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sampangiram Nagara",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10083914305,
+  "lat": 12.8137212,
+  "lon": 77.5808351,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10743419578,
+  "lat": 12.8056182,
+  "lon": 77.5788932,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Sampigehalli",
+    "name:en": "Sampigehalli",
+    "name:kn": "ಸಂಪಿಗೆಹಳ್ಳಿ",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 10743419583,
+  "lat": 12.8191468,
+  "lon": 77.5845714,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Ryan International School",
+    "name:en": "Ryan International School",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 10743419585,
+  "lat": 12.8328087,
+  "lon": 77.5889897,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road",
+    "name": "Kalkere",
+    "name:en": "Kalkere",
+    "name:kn": "ಕಲ್ಕೆರೆ",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 10743419586,
+  "lat": 12.8345567,
+  "lon": 77.5890794,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road",
+    "name": "Tulip Resort Cross",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 10743419587,
+  "lat": 12.8413190,
+  "lon": 77.5884758,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road,KALKERE",
+    "name": "Koli Farm Gate",
+    "name:en": "Koli Farm Gate",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10743419588,
+  "lat": 12.8461791,
+  "lon": 77.5880729,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Basavanapura Gate",
+    "name:en": "Basavanapura Gate",
+    "name:kn": "ಬಸವನಪುರ ಗೇಟ್",
+    "network": "BMTC",
+    "network:wikidata": "Q3345039",
+    "operator": "BMTC",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11598159734,
+  "lat": 12.7741232,
+  "lon": 77.4093904,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Abbanakuppe",
+    "name:en": "Abbanakuppe",
+    "name:kn": "ಅಬ್ಬನಕುಪ್ಪೆ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969436,
+  "lat": 12.8415946,
+  "lon": 77.6479125,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Neeladri Nagar",
+    "name:en": "Neeladri Nagar",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969437,
+  "lat": 12.8434539,
+  "lon": 77.6443197,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Thogur Cross",
+    "name:en": "Thogur Cross",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969439,
+  "lat": 12.8438213,
+  "lon": 77.6346114,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Vittasandra Cross",
+    "name:en": "Vittasandra Cross",
+    "name:kn": "ವಿಟ್ಟಸಂದ್ರ ಕ್ರಾಸ್",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969440,
+  "lat": 12.8416246,
+  "lon": 77.6318501,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Bettadasanapura",
+    "name:en": "Bettadasanapura",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969442,
+  "lat": 12.8364015,
+  "lon": 77.6250487,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Jalli Machine",
+    "name:en": "Jalli Machine",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969444,
+  "lat": 12.8422941,
+  "lon": 77.6187247,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Mylasandra Road Junction",
+    "name:en": "Mylasandra Road Junction",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969446,
+  "lat": 12.8435265,
+  "lon": 77.6133824,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Mylasandra Cross",
+    "name:en": "Mylasandra Cross",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969448,
+  "lat": 12.8439272,
+  "lon": 77.6119106,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Vaddarapalya",
+    "name:en": "Vaddarapalya",
+    "name:kn": "ವಡ್ಡರಪಾಳ್ಯ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969450,
+  "lat": 12.8459448,
+  "lon": 77.6094402,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "St Mary's School",
+    "name:en": "St Mary's School",
+    "name:kn": "ಸೇಂಟ್ ಮೇರಿಸ್ ಶಾಲೆ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969453,
+  "lat": 12.8439835,
+  "lon": 77.6060285,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Basavanna Devasthana CK Palya",
+    "name:en": "Basavanna Devasthana CK Palya",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969454,
+  "lat": 12.8444398,
+  "lon": 77.5980180,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Hommadevanahalli",
+    "name:en": "Hommadevanahalli",
+    "name:kn": "ಹೊಮ್ಮದೇವನಹಳ್ಳಿ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969456,
+  "lat": 12.8408571,
+  "lon": 77.5973448,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Hommadevanahalli Cross",
+    "name:en": "Hommadevanahalli Cross",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969458,
+  "lat": 12.8405590,
+  "lon": 77.5935750,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "CK Palya Cross",
+    "name:en": "CK Palya Cross",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11598969464,
+  "lat": 12.8417802,
+  "lon": 77.5886598,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road,KALKERE",
+    "name": "Koli Farm Gate",
+    "name:en": "Koli Farm Gate",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243210,
+  "lat": 12.8493365,
+  "lon": 77.5881985,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "T John College",
+    "name:en": "T John College",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243213,
+  "lat": 12.8416992,
+  "lon": 77.5887389,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannerghatta Road,KALKERE",
+    "name": "Koli Farm Gate",
+    "name:en": "Koli Farm Gate",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243215,
+  "lat": 12.8404413,
+  "lon": 77.5937212,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "CK Palya Cross",
+    "name:en": "CK Palya Cross",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243217,
+  "lat": 12.8407276,
+  "lon": 77.5972657,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Hommadevanahalli Cross",
+    "name:en": "Hommadevanahalli Cross",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243219,
+  "lat": 12.8443528,
+  "lon": 77.5981019,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Hommadevanahalli",
+    "name:en": "Hommadevanahalli",
+    "name:kn": "ಹೊಮ್ಮದೇವನಹಳ್ಳಿ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243221,
+  "lat": 12.8439109,
+  "lon": 77.6061076,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Basavanna Devasthana CK Palya",
+    "name:en": "Basavanna Devasthana CK Palya",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243223,
+  "lat": 12.8456846,
+  "lon": 77.6095140,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "St Mary's School",
+    "name:en": "St Mary's School",
+    "name:kn": "ಸೇಂಟ್ ಮೇರಿಸ್ ಶಾಲೆ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243225,
+  "lat": 12.8437782,
+  "lon": 77.6120822,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Vaddarapalya",
+    "name:en": "Vaddarapalya",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243226,
+  "lat": 12.8434330,
+  "lon": 77.6134662,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Mylasandra Cross",
+    "name:en": "Mylasandra Cross",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243228,
+  "lat": 12.8422653,
+  "lon": 77.6186322,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Mylasandra Road Junction",
+    "name:en": "Mylasandra Road Junction",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243230,
+  "lat": 12.8362806,
+  "lon": 77.6249984,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Jalli Machine",
+    "name:en": "Jalli Machine",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243232,
+  "lat": 12.8415691,
+  "lon": 77.6319433,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Bettadasanapura",
+    "name:en": "Bettadasanapura",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243234,
+  "lat": 12.8438082,
+  "lon": 77.6348227,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Vittasandra Cross",
+    "name:en": "Vittasandra Cross",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243236,
+  "lat": 12.8434291,
+  "lon": 77.6442111,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Thogur Cross",
+    "name:en": "Thogur Cross",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243238,
+  "lat": 12.8417868,
+  "lon": 77.6467296,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Ajmeer Apartment Neeladri Road",
+    "name:en": "Ajmeer Apartment Neeladri Road",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602243240,
+  "lat": 12.8414612,
+  "lon": 77.6479661,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Neeladri Nagar",
+    "name:en": "Neeladri Nagar",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264623,
+  "lat": 12.7963554,
+  "lon": 77.6163194,
+  "tags": {
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Koppa Gate",
+    "name:en": "Koppa Gate",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264628,
+  "lat": 12.8003899,
+  "lon": 77.5989394,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Ragihalli Gate",
+    "name:en": "Ragihalli Gate",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264630,
+  "lat": 12.8002605,
+  "lon": 77.5988924,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Ragihalli Gate",
+    "name:en": "Ragihalli Gate",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264634,
+  "lat": 12.8083816,
+  "lon": 77.5905065,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Jungepalya Gate",
+    "name:en": "Jungepalya Gate",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264638,
+  "lat": 12.8045042,
+  "lon": 77.5604752,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Booathanahalli",
+    "name:en": "Booathanahalli",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264639,
+  "lat": 12.8044649,
+  "lon": 77.5602888,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Booathanahalli",
+    "name:en": "Booathanahalli",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264641,
+  "lat": 12.8165535,
+  "lon": 77.5669554,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Kesaraguppe",
+    "name:en": "Kesaraguppe",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264643,
+  "lat": 12.8172727,
+  "lon": 77.5672987,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Kesaraguppe",
+    "name:en": "Kesaraguppe",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264645,
+  "lat": 12.8444293,
+  "lon": 77.5838681,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Weavers Colony",
+    "name:en": "Weavers Colony",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264657,
+  "lat": 12.8357026,
+  "lon": 77.5721817,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Muneshwara Temple",
+    "name:en": "Muneshwara Temple",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264659,
+  "lat": 12.8357758,
+  "lon": 77.5720704,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Muneshwara Temple",
+    "name:en": "Muneshwara Temple",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264662,
+  "lat": 12.8326579,
+  "lon": 77.5531608,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kulumepalya",
+    "name:en": "Kulumepalya",
+    "name:kn": "ಕುಲುಮೆ ಪಾಳ್ಯ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264666,
+  "lat": 12.8438056,
+  "lon": 77.5509708,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Onti Mane",
+    "name:en": "Onti Mane",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602264668,
+  "lat": 12.8438148,
+  "lon": 77.5511411,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Onti Mane",
+    "name:en": "Onti Mane",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11602288015,
+  "lat": 12.7946085,
+  "lon": 77.6200399,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Bannergatta Road",
+    "name": "Nisarga Gate",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11688107942,
+  "lat": 12.7846563,
+  "lon": 77.3727420,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11888184714,
+  "lat": 12.8368122,
+  "lon": 77.5158748,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Shanimahathma Temple",
+    "name:en": "Shanimahathma Temple",
+    "name:kn": "ಶನಿ ಮಹಾತ್ಮ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11888184735,
+  "lat": 12.8333590,
+  "lon": 77.5136882,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Lakshmipura",
+    "name:kn": "ಲಕ್ಷ್ಮಿಪುರ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 11888184754,
+  "lat": 12.8251148,
+  "lon": 77.5135674,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Dayananda Sagar College",
+    "name:kn": "ದಯಾನಂದ ಸಾಗರ ಕಾಲೇಜು",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12679657132,
+  "lat": 12.8301094,
+  "lon": 77.3630831,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Kakaramanahalli",
+    "name:kn": "ಕಾಕರಾಮನಹಳ್ಳಿ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12747447654,
+  "lat": 12.7880719,
+  "lon": 77.6178167,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "description": "372 C to K.R. Market 372 F to Kempegowda Bus Station 372 H to Jayanagara Bus Stop",
+    "highway": "bus_stop",
+    "name": "Nisarga Club House Bus Stop",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12753536711,
+  "lat": 12.6960341,
+  "lon": 77.5846553,
+  "tags": {
+    "highway": "bus_stop",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12753536712,
+  "lat": 12.6806505,
+  "lon": 77.5775179,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Kanive Mahadeeswara Temple",
+    "name:kn": "ಕಣಿವೆ ಮಹದೀಶ್ವರ ದೇವಸ್ಥಾನ",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13016690033,
+  "lat": 12.7828808,
+  "lon": 77.5004219,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Sommanahalli Toll",
+    "name:en": "Sommanahalli Toll",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13016690035,
+  "lat": 12.8001885,
+  "lon": 77.5084551,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "loc_name": "Kanakapura Road",
+    "name": "Kaggalipura",
+    "name:en": "Kaggalipura",
+    "name:kn": "ಕಗ್ಗಲಿಪುರ",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 13020763152,
+  "lat": 12.8280322,
+  "lon": 77.5126179,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Art of Living Sri Ravishankar Ashram",
+    "name:en": "Art of Living Sri Ravishankar Ashram",
+    "network": "BMTC",
+    "operator": "BMTC",
+    "public_transport": "platform"
+  }
+}
+
+  ]
+}

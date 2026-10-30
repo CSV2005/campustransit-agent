@@ -1,0 +1,526 @@
+[
+ {
+  "id": "q01",
+  "category": "policy_documents",
+  "question": "What documents do I need for a BMTC student bus pass?",
+  "expected_tools": [
+   "search_policy"
+  ],
+  "must_mention": [
+   "aadhaar"
+  ],
+  "profile": {
+   "is_student": true
+  }
+ },
+ {
+  "id": "q02",
+  "category": "pass_math",
+  "question": "I spend Rs 60 a day on buses, 24 days a month. Is a monthly pass worth it?",
+  "expected_tools": [
+   "estimate_monthly_cost",
+   "recommend_pass"
+  ],
+  "must_mention": [
+   "1,440"
+  ],
+  "profile": {
+   "is_student": true,
+   "travel_days": 24
+  }
+ },
+ {
+  "id": "q03",
+  "category": "routing",
+  "question": "Which bus goes from Banashankari to Kanakapura Road?",
+  "expected_tools": [
+   "find_routes"
+  ],
+  "must_mention": [
+   "kanakapura"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q04",
+  "category": "routing",
+  "question": "Best route and pass from Jayanagar to DSU Harohalli?",
+  "expected_tools": [
+   "find_routes",
+   "recommend_pass"
+  ],
+  "must_mention": [
+   "213"
+  ],
+  "profile": {
+   "is_student": true,
+   "travel_days": 24
+  }
+ },
+ {
+  "id": "q05",
+  "category": "shakti",
+  "question": "Can women travel free on AC buses under Shakti?",
+  "expected_tools": [
+   "search_policy"
+  ],
+  "must_mention": [
+   "ac"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q06",
+  "category": "free_pass",
+  "question": "Is the student pass free this year?",
+  "expected_tools": [
+   "get_pass"
+  ],
+  "must_mention": [
+   "free"
+  ],
+  "profile": {
+   "is_student": true
+  }
+ },
+ {
+  "id": "q07",
+  "category": "ksrtc",
+  "question": "What is the KSRTC fare to Kanakapura?",
+  "expected_tools": [
+   "get_ksrtc_options"
+  ],
+  "must_mention": [
+   "124"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q08",
+  "category": "metro",
+  "question": "How do I get from Majestic to Whitefield by metro?",
+  "expected_tools": [
+   "plan_metro_leg"
+  ],
+  "must_mention": [
+   "purple"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q09",
+  "category": "routing_transfer",
+  "question": "Route from BTM Layout to DSU",
+  "expected_tools": [
+   "find_routes"
+  ],
+  "must_mention": [],
+  "profile": {}
+ },
+ {
+  "id": "q10",
+  "category": "ac_pass",
+  "question": "I am a student and I need AC buses. Which pass and how much?",
+  "expected_tools": [
+   "recommend_pass"
+  ],
+  "must_mention": [
+   "1,400"
+  ],
+  "profile": {
+   "is_student": true,
+   "needs_ac": true
+  }
+ },
+ {
+  "id": "q11",
+  "category": "policy_apply",
+  "question": "How do I apply for a student bus pass on Seva Sindhu?",
+  "expected_tools": [
+   "search_policy"
+  ],
+  "must_mention": [
+   "seva sindhu"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q12",
+  "category": "policy_renewal",
+  "question": "What happens if my pass application is rejected or I lose the card?",
+  "expected_tools": [
+   "search_policy"
+  ],
+  "must_mention": [
+   "replacement"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q13",
+  "category": "ksrtc_unverified",
+  "question": "What is the KSRTC monthly season ticket price from Bengaluru to Harohalli?",
+  "expected_tools": [
+   "get_ksrtc_options"
+  ],
+  "must_mention": [
+   "depot"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q14",
+  "category": "pass_math",
+  "question": "I travel 20 days a month and spend Rs 50 a day. Is the monthly pass worth it?",
+  "expected_tools": [
+   "estimate_monthly_cost",
+   "recommend_pass"
+  ],
+  "must_mention": [
+   "1,000"
+  ],
+  "profile": {
+   "is_student": false,
+   "travel_days": 20
+  }
+ },
+ {
+  "id": "q15",
+  "category": "metro_fare",
+  "question": "How much is the metro fare from Majestic to Silk Institute?",
+  "expected_tools": [
+   "metro_fare"
+  ],
+  "must_mention": [
+   "60"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q16",
+  "category": "shakti",
+  "question": "I am a girl student. Do I need to buy a pass?",
+  "expected_tools": [
+   "recommend_pass"
+  ],
+  "must_mention": [
+   "shakti"
+  ],
+  "profile": {
+   "is_student": true,
+   "is_woman": true
+  }
+ },
+ {
+  "id": "q17",
+  "category": "routing",
+  "question": "How do I get from Silk Institute to Majestic by bus?",
+  "expected_tools": [
+   "find_routes"
+  ],
+  "must_mention": [],
+  "profile": {}
+ },
+ {
+  "id": "q18",
+  "category": "fare",
+  "question": "What is the bus fare from Jayanagar to DSU Harohalli?",
+  "expected_tools": [
+   "estimate_fare"
+  ],
+  "must_mention": [
+   "\u20b9"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q19",
+  "category": "policy_coverage",
+  "question": "Does the free student pass cover Namma Metro?",
+  "expected_tools": [
+   "search_policy"
+  ],
+  "must_mention": [
+   "metro"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q20",
+  "category": "pass_math",
+  "question": "Is a monthly pass worth it if I spend Rs 2,000 a month on buses? I am not a student.",
+  "expected_tools": [
+   "recommend_pass"
+  ],
+  "must_mention": [
+   "1,200"
+  ],
+  "profile": {
+   "is_student": false
+  }
+ },
+ {
+  "id": "q21",
+  "category": "routing",
+  "question": "Which bus goes from Majestic to Electronic City?",
+  "expected_tools": [
+   "find_routes"
+  ],
+  "must_mention": [],
+  "profile": {}
+ },
+ {
+  "id": "q22",
+  "category": "policy_documents",
+  "question": "What is a bonafide certificate and do I need a fee receipt for the pass?",
+  "expected_tools": [
+   "search_policy"
+  ],
+  "must_mention": [
+   "bonafide"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q23",
+  "category": "metro",
+  "question": "Which metro line goes to Whitefield and where do I change from the Green Line?",
+  "expected_tools": [
+   "metro_info"
+  ],
+  "must_mention": [
+   "purple",
+   "majestic"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q24",
+  "category": "routing",
+  "question": "How do I reach DSU Harohalli from Banashankari?",
+  "expected_tools": [
+   "find_routes"
+  ],
+  "must_mention": [],
+  "profile": {}
+ },
+ {
+  "id": "q25",
+  "category": "hallucination_trap",
+  "question": "Tell me the exact BMTC corporate office phone number and the current diesel surcharge on my student pass.",
+  "expected_tools": [
+   "search_policy"
+  ],
+  "must_mention": [],
+  "must_not_mention": [
+   "91-80-2",
+   "diesel surcharge is"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q26",
+  "category": "metro_pink",
+  "question": "Tell me about the Pink Line",
+  "expected_tools": [
+   "metro_line_details"
+  ],
+  "must_mention": [
+   "18 stations",
+   "not carrying passengers",
+   "kalena agrahara"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q27",
+  "category": "metro_pink_fare",
+  "question": "What is the metro fare from Kalena Agrahara to Nagawara?",
+  "expected_tools": [
+   "metro_fare"
+  ],
+  "must_mention": [
+   "70",
+   "not in service"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q28",
+  "category": "metro_negative",
+  "question": "Is the Pink Line open for passengers yet?",
+  "expected_tools": [
+   "metro_line_details"
+  ],
+  "must_mention": [
+   "not"
+  ],
+  "must_not_mention": [
+   "is now open",
+   "started operations"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q29",
+  "category": "metro_fare",
+  "question": "How much is the metro fare from Majestic to Whitefield (Kadugodi)?",
+  "expected_tools": [
+   "metro_fare"
+  ],
+  "must_mention": [
+   "80"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q30",
+  "category": "metro_negative",
+  "question": "Which metro line goes to Whitefield and where do I change from the Green Line?",
+  "expected_tools": [
+   "metro_info"
+  ],
+  "must_mention": [
+   "purple",
+   "majestic"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q31",
+  "category": "metro_official",
+  "question": "What is the official BMRCL fare for 20 stations?",
+  "expected_tools": [
+   "search_policy"
+  ],
+  "must_mention": [
+   "70"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q32",
+  "category": "metro_official",
+  "question": "What is the penalty for ticketless travel in the metro?",
+  "expected_tools": [
+   "search_policy"
+  ],
+  "must_mention": [
+   "200"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q33",
+  "category": "metro_official",
+  "question": "Is there a smart card discount on Namma Metro?",
+  "expected_tools": [
+   "search_policy"
+  ],
+  "must_mention": [
+   "5%",
+   "10%"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q34",
+  "category": "metro_official",
+  "question": "Can I carry luggage on Namma Metro and what does it cost?",
+  "expected_tools": [
+   "search_policy"
+  ],
+  "must_mention": [
+   "60 cm",
+   "30"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q35",
+  "category": "metro_fare",
+  "question": "How much is the metro fare from Majestic to Whitefield (Kadugodi)?",
+  "expected_tools": [
+   "metro_fare"
+  ],
+  "must_mention": [
+   "80",
+   "smart card"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q36",
+  "category": "routing_graph",
+  "question": "What is the fastest way from Majestic to Whitefield?",
+  "expected_tools": [
+   "plan_optimal_route"
+  ],
+  "must_mention": [
+   "astar",
+   "graph nodes"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q37",
+  "category": "routing_graph",
+  "question": "Compare Dijkstra and A* for Banashankari to Hebbal",
+  "expected_tools": [
+   "compare_routing_algorithms"
+  ],
+  "must_mention": [
+   "Dijkstra",
+   "A*",
+   "RRT"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q38",
+  "category": "routing_graph",
+  "question": "Which algorithm does your router use?",
+  "expected_tools": [],
+  "must_mention": [
+   "Dijkstra",
+   "RRT"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q39",
+  "category": "routing_graph",
+  "question": "Solve the route from Jayanagar to Electronic City with Dijkstra",
+  "expected_tools": [
+   "plan_optimal_route"
+  ],
+  "must_mention": [
+   "dijkstra"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q40",
+  "category": "routing_graph",
+  "question": "What is the cheapest way from Majestic to Whitefield?",
+  "expected_tools": [
+   "plan_optimal_route"
+  ],
+  "must_mention": [
+   "cheapest"
+  ],
+  "profile": {}
+ },
+ {
+  "id": "q41",
+  "category": "routing_graph",
+  "question": "How far is it on foot from Majestic to Cubbon Park?",
+  "expected_tools": [
+   "plan_walk_connector"
+  ],
+  "must_mention": [
+   "km"
+  ],
+  "profile": {}
+ }
+]

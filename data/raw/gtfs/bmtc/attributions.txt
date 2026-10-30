@@ -1,0 +1,3 @@
+attribution_id,organization_name,is_producer,is_operator,is_authority,attribution_url
+bmtc,Bengaluru Metropolitan Transport Corporation,,1,1,https://mybmtc.karnataka.gov.in/english
+vonter,Vonter,1,,,https://www.github.com/Vonter/bmtc-gtfs

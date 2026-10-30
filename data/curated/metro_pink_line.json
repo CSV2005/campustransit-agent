@@ -1,0 +1,40 @@
+{
+  "line_id": "PINK",
+  "line_name": "Pink",
+  "route_short_name": "Pink",
+  "route_long_name": "Kalena Agrahara - Nagawara",
+  "route_desc": "Pink Line (Reach 6) runs north-south from Kalena Agrahara on Bannerghatta Road to Nagawara, via Jayadeva Hospital, MG Road and Shivajinagar. Not yet carrying passengers as of 2026-10-22.",
+  "route_color": "E75480",
+  "service_status": "under_construction",
+  "operational_note": "Elevated section (Kalena Agrahara - Tavarekere, 6 stations, 7.5 km) completed its final CMRS safety inspection on 8 Oct 2026 and is awaiting CMRS authorisation; passenger services expected late Oct / early Nov 2026. Underground section (Dairy Circle - Nagawara, 12 stations, 13.76 km) targeted Jan-Mar 2027.",
+  "length_km_planned": 21.26,
+  "stations_planned": 18,
+  "source_url": "https://en.wikipedia.org/wiki/Pink_Line_(Namma_Metro)",
+  "secondary_sources": [
+    "https://bengalurumetro.in/bangalore-metro-pink-line.html",
+    "https://www.thehindu.com/news/national/karnataka/namma-metro-pink-line-may-miss-september-deadline-as-approvals-remain-pending/article71473162.ece"
+  ],
+  "last_verified": "2026-10-22",
+  "verification_status": "VERIFIED_SECONDARY",
+  "coordinate_source": "Wikipedia station articles (infobox coordinates) via the MediaWiki API; interchanges reuse the existing BMRCL GTFS stop_id",
+  "stations": [
+    {"seq": 1,  "name": "Kalena Agrahara",            "stop_id": "PNK01", "lat": 12.87158,  "lon": 77.59363,  "section": "elevated", "phase": 1},
+    {"seq": 2,  "name": "Hulimavu",                   "stop_id": "PNK02", "lat": 12.88108,  "lon": 77.59579,  "section": "elevated", "phase": 1},
+    {"seq": 3,  "name": "Bilekahalli IIM-B",          "stop_id": "PNK03", "lat": 12.89564,  "lon": 77.59967,  "section": "elevated", "phase": 1},
+    {"seq": 4,  "name": "JP Nagar 4th Phase",         "stop_id": "PNK04", "lat": 12.90984,  "lon": 77.60024,  "section": "elevated", "phase": 1},
+    {"seq": 5,  "name": "Jayadeva Hospital",          "stop_id": "JDHP",  "lat": 12.916731, "lon": 77.59997,  "section": "elevated", "phase": 1, "interchange": ["YELLOW"]},
+    {"seq": 6,  "name": "Tavarekere",                 "stop_id": "PNK06", "lat": 12.92942,  "lon": 77.60049,  "section": "elevated", "phase": 1},
+    {"seq": 7,  "name": "Dairy Circle",               "stop_id": "PNK07", "lat": 12.94045,  "lon": 77.60235,  "section": "underground", "phase": 2},
+    {"seq": 8,  "name": "Lakkasandra",                "stop_id": "PNK08", "lat": 12.94934,  "lon": 77.60308,  "section": "underground", "phase": 2},
+    {"seq": 9,  "name": "Langford Town",              "stop_id": "PNK09", "lat": 12.95714,  "lon": 77.60615,  "section": "underground", "phase": 2},
+    {"seq": 10, "name": "National Military School",   "stop_id": "PNK10", "lat": 12.96443,  "lon": 77.60704,  "section": "underground", "phase": 2},
+    {"seq": 11, "name": "Mahatma Gandhi Road",        "stop_id": "MAGR",  "lat": 12.975526, "lon": 77.60679,  "section": "underground", "phase": 2, "interchange": ["PURPLE"]},
+    {"seq": 12, "name": "Shivajinagar",               "stop_id": "PNK12", "lat": 12.98358,  "lon": 77.60306,  "section": "underground", "phase": 2},
+    {"seq": 13, "name": "Cantonment Railway Station", "stop_id": "PNK13", "lat": 12.99142,  "lon": 77.60606,  "section": "underground", "phase": 2},
+    {"seq": 14, "name": "Pottery Town",               "stop_id": "PNK14", "lat": 13.00049,  "lon": 77.60934,  "section": "underground", "phase": 2},
+    {"seq": 15, "name": "Tannery Road",               "stop_id": "PNK15", "lat": 13.00899,  "lon": 77.613491, "section": "underground", "phase": 2},
+    {"seq": 16, "name": "Venkateshpura",              "stop_id": "PNK16", "lat": 13.01757,  "lon": 77.61789,  "section": "underground", "phase": 2},
+    {"seq": 17, "name": "Kadugundanahalli",           "stop_id": "PNK17", "lat": 13.02984,  "lon": 77.62066,  "section": "underground", "phase": 2},
+    {"seq": 18, "name": "Nagawara",                   "stop_id": "PNK18", "lat": 13.04051,  "lon": 77.62466,  "section": "underground", "phase": 2, "planned_interchange": ["BLUE"]}
+  ]
+}

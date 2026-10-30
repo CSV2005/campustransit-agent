@@ -1,0 +1,241 @@
+[
+  {
+    "pass_id": "karnataka_free_student_pass",
+    "operator": "Karnataka Govt (BMTC / KSRTC / NWKRTC / KKRTC)",
+    "name": "Karnataka Free Student Bus Pass (2026-27)",
+    "service_classes": [
+      "ksrtc_express",
+      "metro_feeder",
+      "ordinary"
+    ],
+    "price_inr": 0,
+    "price_note": "Government pays the pass fee, a Rs 100 processing fee per pass and Rs 50 accident-relief contribution. Students applying at a Bangalore One / Karnataka One counter may still be charged a Rs 30 service charge for data entry.",
+    "validity_days": 300,
+    "validity_note": "Academic-year pass: approx. Jun 2026 - Mar 2027 for school/PUC, Jul 2026 - Jun 2027 for degree/professional, Aug 2026 - Jul 2027 for technical/medical. Validity follows the existing category rules.",
+    "unlimited_rides": true,
+    "student_only": true,
+    "geographic_scope": "All non-AC services of the four state RTCs inside Karnataka, subject to the existing distance limits (KSRTC norm: up to 60 km one-way between residence and institution).",
+    "eligibility": "Any regular student enrolled in a recognised school, PU college, degree, diploma, ITI, professional, medical, evening or PhD course in Karnataka. Also extended to Karnataka-domicile students studying in neighbouring states and to students from border districts.",
+    "documents_required": [
+      "Institution-signed student bus pass application form (downloaded from Seva Sindhu)",
+      "Fee receipt for the current academic year",
+      "Passport-size photograph (live photo is captured at the counter when the smart card is printed)",
+      "Aadhaar card",
+      "Mobile number registered on Seva Sindhu",
+      "Caste certificate with RD number (SC/ST applicants only)"
+    ],
+    "where_to_apply": "Online on the Seva Sindhu / e-District portal (sevaone.karnataka.gov.in) from 29 May 2026. Apply free online; Rs 30 service charge at Bangalore One / Karnataka One / Grama One centres. Collect the smart card in person at the designated counter.",
+    "application_url": "https://sevaone.karnataka.gov.in/",
+    "source_url": "https://www.thehindu.com/news/national/karnataka/karnataka-extends-free-bus-pass-scheme-to-its-students-studying-outside-state/article71093405.ece",
+    "secondary_sources": [
+      "https://www.newindianexpress.com/states/karnataka/2026/Jun/12/karnataka-rolls-out-free-bus-travel-for-all-students-orders-refunds-for-passes-already-bought",
+      "https://www.thehindu.com/news/national/karnataka/bus-pass-fee-refund-to-be-credited-within-seven-days-says-ksrtc/article71142564.ece"
+    ],
+    "last_verified": "2026-10-22",
+    "verification_status": "VERIFIED_SECONDARY",
+    "notes": "State Transport Department order effective 12 June 2026. Covers non-AC BMTC and KSRTC ordinary services only; it does NOT cover BMTC AC/Vajra, Vayu Vajra or luxury KSRTC classes. Girl students already travel free under Shakti and do not need this pass. Existing pass holders for 2026-27 are being refunded via Seva Sindhu."
+  },
+  {
+    "pass_id": "shakti_scheme",
+    "operator": "Karnataka Govt",
+    "name": "Shakti Scheme — free travel for women",
+    "service_classes": [
+      "ksrtc_express",
+      "metro_feeder",
+      "ordinary"
+    ],
+    "price_inr": 0,
+    "price_note": "No ticket and no pass purchase; show a Karnataka ID or the Shakti smart card.",
+    "validity_days": null,
+    "validity_note": "Ongoing scheme, in force since 11 June 2023.",
+    "unlimited_rides": true,
+    "student_only": false,
+    "geographic_scope": "Non-premium state buses (BMTC ordinary and KSRTC ordinary/express) within Karnataka. Not valid on AC, Vajra, Vayu Vajra, Airavat, Ambari, Rajahamsa or other luxury classes; not valid for the portion of an interstate journey that leaves Karnataka.",
+    "eligibility": "Women and transgender residents of Karnataka (photo ID / domicile proof).",
+    "documents_required": [
+      "Aadhaar or any Karnataka residence/identity proof",
+      "Shakti smart card where already issued"
+    ],
+    "where_to_apply": "No application needed for most travellers — just carry ID. The Shakti smart card is issued through the Seva Sindhu portal.",
+    "application_url": "https://sevasindhu.karnataka.gov.in",
+    "source_url": "https://data.opencity.in/dataset/government-of-karnataka-five-guarantees-2023",
+    "secondary_sources": [
+      "https://www.thehindu.com/news/national/karnataka/karnataka-extends-free-bus-pass-scheme-to-its-students-studying-outside-state/article71093405.ece"
+    ],
+    "last_verified": "2026-10-22",
+    "verification_status": "VERIFIED_SECONDARY",
+    "notes": "For a woman Karnataka resident on non-AC buses this dominates every paid pass. The agent must check this before recommending any paid product."
+  },
+  {
+    "pass_id": "bmtc_student_pass_ac_vajra",
+    "operator": "BMTC",
+    "name": "BMTC Student Monthly Pass — AC (Vajra)",
+    "service_classes": [
+      "ordinary",
+      "ac_vajra",
+      "metro_feeder"
+    ],
+    "price_inr": 1400,
+    "price_note": "Monthly with effect from 9 January 2025 (up from Rs 1,200). The free student pass does not cover AC services, so this remains a paid product.",
+    "validity_days": 30,
+    "validity_note": "Calendar month.",
+    "unlimited_rides": true,
+    "student_only": true,
+    "geographic_scope": "BMTC network including AC Vajra services, but NOT Vayu Vajra airport services.",
+    "eligibility": "Enrolled student with valid institution ID / bonafide certificate and fee receipt. Karnataka residence required for the concessional student category.",
+    "documents_required": [
+      "Institution-signed pass application form",
+      "Bonafide certificate or current-year fee receipt",
+      "Passport-size photograph",
+      "Aadhaar / student ID"
+    ],
+    "where_to_apply": "BMTC pass counters at major bus stations (Majestic/KBS, Banashankari TTMC, Shivajinagar, Electronic City, Anekal etc.) or the Namma BMTC app; applications via Seva Sindhu for student categories.",
+    "application_url": "https://mybmtc.karnataka.gov.in",
+    "source_url": "https://timesofindia.indiatimes.com/city/bengaluru/pay-more-for-bmtc-bus-passes/articleshow/117063438.cms",
+    "secondary_sources": [
+      "https://www.hindustantimes.com/cities/bengaluru-news/bengaluru-bmtc-increases-bus-pass-rates-across-categories-from-thursday-101736507171139.html"
+    ],
+    "last_verified": "2026-10-22",
+    "verification_status": "VERIFIED_SECONDARY",
+    "notes": "Worth it only if the student regularly uses AC routes; the free pass already covers all non-AC travel. Verify the current rate on the Namma BMTC app, rates were last revised in January 2025."
+  },
+  {
+    "pass_id": "bmtc_monthly_ordinary",
+    "operator": "BMTC",
+    "name": "BMTC Ordinary Monthly Pass (non-AC)",
+    "service_classes": [
+      "ordinary",
+      "metro_feeder"
+    ],
+    "price_inr": 1200,
+    "price_note": "Rs 1,200 per calendar month with effect from 9 January 2025 (up from Rs 1,050). A Rs 1,500 'ordinary extension' monthly pass exists for newly extended routes beyond 40 km.",
+    "validity_days": 30,
+    "validity_note": "Calendar month.",
+    "unlimited_rides": true,
+    "student_only": false,
+    "geographic_scope": "Unlimited travel on all non-AC BMTC services within the network (toll-road tolls extra).",
+    "eligibility": "Any commuter; ID proof required at the counter.",
+    "documents_required": [
+      "Photo ID proof (Aadhaar / driving licence / student ID)",
+      "Passport-size photograph"
+    ],
+    "where_to_apply": "BMTC pass counters at major bus stations, or online via the Namma BMTC app / mybmtc.karnataka.gov.in.",
+    "application_url": "https://mybmtc.karnataka.gov.in",
+    "source_url": "https://timesofindia.indiatimes.com/city/bengaluru/pay-more-for-bmtc-bus-passes/articleshow/117063438.cms",
+    "last_verified": "2026-10-22",
+    "verification_status": "VERIFIED_SECONDARY",
+    "notes": "The benchmark paid pass for non-students. Daily pass Rs 80, weekly Rs 350 (same revision)."
+  },
+  {
+    "pass_id": "bmtc_monthly_vajra_ac",
+    "operator": "BMTC",
+    "name": "BMTC Vajra AC Monthly Pass",
+    "service_classes": [
+      "ac_vajra"
+    ],
+    "price_inr": 2000,
+    "price_note": "Rs 2,000 per calendar month with effect from 9 January 2025 (up from Rs 1,800). Vayu Vajra airport services excluded.",
+    "validity_days": 30,
+    "validity_note": "Calendar month.",
+    "unlimited_rides": true,
+    "student_only": false,
+    "geographic_scope": "BMTC Vajra AC services except Vayu Vajra (airport).",
+    "eligibility": "Any commuter.",
+    "documents_required": [
+      "Photo ID proof",
+      "Passport-size photograph"
+    ],
+    "where_to_apply": "BMTC pass counters / Namma BMTC app.",
+    "application_url": "https://mybmtc.karnataka.gov.in",
+    "source_url": "https://www.hindustantimes.com/cities/bengaluru-news/bengaluru-bmtc-increases-bus-pass-rates-across-categories-from-thursday-101736507171139.html",
+    "last_verified": "2026-10-22",
+    "verification_status": "VERIFIED_SECONDARY",
+    "notes": "Only worth it above roughly 50 AC rides a month."
+  },
+  {
+    "pass_id": "bmtc_vayu_vajra_gold",
+    "operator": "BMTC",
+    "name": "BMTC Vayu Vajra Gold Monthly Pass (airport)",
+    "service_classes": [
+      "ac_vajra",
+      "vayu_vajra"
+    ],
+    "price_inr": 4000,
+    "price_note": "Rs 4,000 per calendar month with effect from 9 January 2025 (up from Rs 3,755). Includes toll + GST components.",
+    "validity_days": 30,
+    "validity_note": "Calendar month.",
+    "unlimited_rides": true,
+    "student_only": false,
+    "geographic_scope": "All BMTC services including Vayu Vajra airport routes (except Bangalore Rounds and special services).",
+    "eligibility": "Any commuter.",
+    "documents_required": [
+      "Photo ID proof",
+      "Passport-size photograph"
+    ],
+    "where_to_apply": "BMTC pass counters / Namma BMTC app.",
+    "application_url": "https://mybmtc.karnataka.gov.in",
+    "source_url": "https://timesofindia.indiatimes.com/city/bengaluru/pay-more-for-bmtc-bus-passes/articleshow/117063438.cms",
+    "last_verified": "2026-10-22",
+    "verification_status": "VERIFIED_SECONDARY",
+    "notes": "Only relevant for frequent airport travellers; a Vayu Vajra single ticket is usually cheaper for occasional trips."
+  },
+  {
+    "pass_id": "ksrtc_student_pass",
+    "operator": "KSRTC",
+    "name": "KSRTC Student Bus Pass (now covered by the free scheme)",
+    "service_classes": [
+      "ksrtc_ordinary"
+    ],
+    "price_inr": 0,
+    "price_note": "Free for 2026-27 under the state free-pass order. Pre-scheme rates (for reference): college/diploma Rs 1,050 for 10 months, professional courses Rs 1,550, high-school boys Rs 750, high-school girls Rs 550.",
+    "validity_days": 300,
+    "validity_note": "10 months (12 for ITI), aligned to the academic year.",
+    "unlimited_rides": false,
+    "student_only": true,
+    "geographic_scope": "KSRTC ordinary services on the declared home-to-institution route, up to 60 km one-way under existing norms.",
+    "eligibility": "Karnataka-domicile student commuting daily on a defined KSRTC route. Interstate and border-area students apply under separate concessional categories.",
+    "documents_required": [
+      "Institution-signed application form",
+      "Bonafide certificate / fee receipt",
+      "Aadhaar",
+      "Passport-size photographs",
+      "Distance declaration if the institution is more than 40 km away"
+    ],
+    "where_to_apply": "Seva Sindhu portal (free) or Karnataka One / Grama One / Bangalore One counters (Rs 30 service charge). Collect the pass at the chosen KSRTC counter.",
+    "application_url": "https://ksrtc.karnataka.gov.in/info-2/Student+Bus+Pass/en",
+    "source_url": "https://ksrtc.karnataka.gov.in/info-2/Student+Bus+Pass/en",
+    "secondary_sources": [
+      "https://www.newindianexpress.com/states/karnataka/2026/Jun/12/karnataka-rolls-out-free-bus-travel-for-all-students-orders-refunds-for-passes-already-bought"
+    ],
+    "last_verified": "2026-10-22",
+    "verification_status": "VERIFIED_SECONDARY",
+    "notes": "This is the pass that matters for the Harohalli / Kanakapura corridor, because that leg runs beyond the BMTC city network. It does not cover KSRTC luxury classes (Airavat, Ambari, Rajahamsa)."
+  },
+  {
+    "pass_id": "ksrtc_sarige_monthly",
+    "operator": "KSRTC",
+    "name": "KSRTC Monthly Season Ticket (Sarige / ordinary)",
+    "service_classes": [
+      "ksrtc_ordinary"
+    ],
+    "price_inr": null,
+    "price_note": "Priced per corridor by the issuing depot; there is no single published tariff, and no accessible open dataset of corridor prices.",
+    "validity_days": 30,
+    "validity_note": "Calendar month.",
+    "unlimited_rides": false,
+    "student_only": false,
+    "geographic_scope": "Travel between two named places (usually up to 11 fare stages) on KSRTC ordinary services.",
+    "eligibility": "Any daily commuter on a fixed corridor; photo identity card issued by KSRTC (Rs 50).",
+    "documents_required": [
+      "Photo ID",
+      "Passport-size photograph",
+      "Completed pass application at the depot"
+    ],
+    "where_to_apply": "Nearest KSRTC depot / bus station counter.",
+    "application_url": "https://ksrtc.karnataka.gov.in/info-2/Passes+&+Concession/en",
+    "source_url": "https://ksrtc.karnataka.gov.in/info-2/Passes+&+Concession/en",
+    "last_verified": "2026-10-22",
+    "verification_status": "PRICE_UNVERIFIED",
+    "notes": "KSRTC prices season tickets corridor-by-corridor at the depot. The agent must not quote a number for this pass; it should send the student to the depot with the corridor details."
+  }
+]

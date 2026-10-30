@@ -1,0 +1,132 @@
+[
+  {
+    "id": "dsu_harohalli",
+    "name": "Dayananda Sagar University — Harohalli Campus",
+    "aliases": ["DSU Harohalli", "DSU", "DSU main campus", "Dayananda Sagar University Harohalli", "DSU SOE"],
+    "kind": "campus",
+    "lat": 12.6599299,
+    "lon": 77.4511912,
+    "source": "OpenStreetMap way 1107054018 via Overpass (ODbL); cross-checked with Nominatim",
+    "note": "Main DSU campus, Kiranagere, Harohalli taluk, Bengaluru South 562112. ~40 km south of Majestic on the Kanakapura Road corridor.",
+    "nearest_stop_hint": "BWSSB Quaters Harohalli (BMTC stop BWSSBQ)"
+  },
+  {
+    "id": "dsce_kumaraswamy",
+    "name": "Dayananda Sagar College of Engineering / DSU City Campus",
+    "aliases": ["DSCE", "DSU Kumaraswamy Layout", "Dayananda Sagar College", "DSU city campus"],
+    "kind": "campus",
+    "lat": 12.90948,
+    "lon": 77.56553,
+    "source": "BMTC GTFS stop 'Dayananda Sagar College' (DYNDS, stop 21874)",
+    "note": "Kumaraswamy Layout campus. Nearest BMTC stop is literally named after the college."
+  },
+  {
+    "id": "dsatm_bangalore",
+    "name": "Dayananda Sagar Academy of Technology and Management",
+    "aliases": ["DSATM", "DSATM Bangalore", "Dayananda Sagar Academy"],
+    "kind": "campus",
+    "lat": 12.8250806,
+    "lon": 77.515023,
+    "source": "OpenStreetMap way 668075243 via Overpass (ODbL)",
+    "note": "Kanakapura Road campus; BMTC stop 'CS-Dayanand Sagar College Kanakapura Road' (DSVST) is adjacent."
+  },
+  {
+    "id": "christ_university",
+    "name": "Christ University — Central Campus",
+    "aliases": ["Christ", "Christ College", "Christ University Hosur Road"],
+    "kind": "campus",
+    "lat": 12.9337333,
+    "lon": 77.6051251,
+    "source": "OpenStreetMap way via Overpass (ODbL)"
+  },
+  {
+    "id": "pes_university",
+    "name": "PES University — Ring Road Campus",
+    "aliases": ["PES", "PESU", "PES University Banashankari"],
+    "kind": "campus",
+    "lat": 12.9348535,
+    "lon": 77.5321404,
+    "source": "OpenStreetMap way via Overpass (ODbL)"
+  },
+  {
+    "id": "bmsce",
+    "name": "BMS College of Engineering",
+    "aliases": ["BMSCE", "BMS", "BMS College"],
+    "kind": "campus",
+    "lat": 12.9415239,
+    "lon": 77.5659049,
+    "source": "OpenStreetMap way via Overpass (ODbL)"
+  },
+  {
+    "id": "msrit",
+    "name": "M S Ramaiah Institute of Technology",
+    "aliases": ["MSRIT", "Ramaiah Institute of Technology", "Ramaiah"],
+    "kind": "campus",
+    "lat": 13.0309173,
+    "lon": 77.565225,
+    "source": "OpenStreetMap way via Overpass (ODbL)"
+  },
+  {
+    "id": "iimb",
+    "name": "Indian Institute of Management Bangalore",
+    "aliases": ["IIMB", "IIM Bangalore", "IIM-B"],
+    "kind": "campus",
+    "lat": 12.8958685,
+    "lon": 77.6023239,
+    "source": "OpenStreetMap way via Overpass (ODbL)"
+  },
+  {
+    "id": "nlsiu",
+    "name": "National Law School of India University",
+    "aliases": ["NLSIU", "National Law School", "NLS"],
+    "kind": "campus",
+    "lat": 12.9528954,
+    "lon": 77.5159691,
+    "source": "OpenStreetMap way via Overpass (ODbL)"
+  },
+  {
+    "id": "azim_premji",
+    "name": "Azim Premji University",
+    "aliases": ["APU", "Azim Premji"],
+    "kind": "campus",
+    "lat": 12.8439831,
+    "lon": 77.7770656,
+    "source": "OpenStreetMap way via Overpass (ODbL)"
+  },
+  {
+    "id": "alliance_university",
+    "name": "Alliance University",
+    "aliases": ["Alliance", "Alliance Business School"],
+    "kind": "campus",
+    "lat": 12.7297283,
+    "lon": 77.7082701,
+    "source": "OpenStreetMap way via Overpass (ODbL)"
+  },
+  {
+    "id": "reva_university",
+    "name": "REVA University",
+    "aliases": ["REVA", "Reva"],
+    "kind": "campus",
+    "lat": 13.1155417,
+    "lon": 77.6358788,
+    "source": "OpenStreetMap way via Overpass (ODbL)"
+  },
+  {
+    "id": "nmit",
+    "name": "Nitte Meenakshi Institute of Technology",
+    "aliases": ["NMIT", "Nitte Meenakshi"],
+    "kind": "campus",
+    "lat": 13.1293899,
+    "lon": 77.5879044,
+    "source": "OpenStreetMap way via Overpass (ODbL)"
+  },
+  {
+    "id": "jain_university_city",
+    "name": "Jain University — City Campus",
+    "aliases": ["Jain University", "JU"],
+    "kind": "campus",
+    "lat": 12.9609027,
+    "lon": 77.5853359,
+    "source": "OpenStreetMap way via Overpass (ODbL)"
+  }
+]

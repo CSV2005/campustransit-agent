@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CampusTransit — Plan Smarter. Travel Cheaper. Reach on Time.</title>
+<style id="leaflet-css">/* required styles */
+
+.leaflet-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-container,
+.leaflet-pane > svg,
+.leaflet-pane > canvas,
+.leaflet-zoom-box,
+.leaflet-image-layer,
+.leaflet-layer {
+	position: absolute;
+	left: 0;
+	top: 0;
+	}
+.leaflet-container {
+	overflow: hidden;
+	}
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
+	  -webkit-user-drag: none;
+	}
+/* Prevents IE11 from highlighting tiles in blue */
+.leaflet-tile::selection {
+	background: transparent;
+}
+/* Safari renders non-retina tile on retina better with this, but Chrome is worse */
+.leaflet-safari .leaflet-tile {
+	image-rendering: -webkit-optimize-contrast;
+	}
+/* hack that prevents hw layers "stretching" when loading new tiles */
+.leaflet-safari .leaflet-tile-container {
+	width: 1600px;
+	height: 1600px;
+	-webkit-transform-origin: 0 0;
+	}
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+	display: block;
+	}
+/* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */
+/* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */
+.leaflet-container .leaflet-overlay-pane svg {
+	max-width: none !important;
+	max-height: none !important;
+	}
+.leaflet-container .leaflet-marker-pane img,
+.leaflet-container .leaflet-shadow-pane img,
+.leaflet-container .leaflet-tile-pane img,
+.leaflet-container img.leaflet-image-layer,
+.leaflet-container .leaflet-tile {
+	max-width: none !important;
+	max-height: none !important;
+	width: auto;
+	padding: 0;
+	}
+
+.leaflet-container img.leaflet-tile {
+	/* See: https://bugs.chromium.org/p/chromium/issues/detail?id=600120 */
+	mix-blend-mode: plus-lighter;
+}
+
+.leaflet-container.leaflet-touch-zoom {
+	-ms-touch-action: pan-x pan-y;
+	touch-action: pan-x pan-y;
+	}
+.leaflet-container.leaflet-touch-drag {
+	-ms-touch-action: pinch-zoom;
+	/* Fallback for FF which doesn't support pinch-zoom */
+	touch-action: none;
+	touch-action: pinch-zoom;
+}
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.leaflet-container {
+	-webkit-tap-highlight-color: transparent;
+}
+.leaflet-container a {
+	-webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);
+}
+.leaflet-tile {
+	filter: inherit;
+	visibility: hidden;
+	}
+.leaflet-tile-loaded {
+	visibility: inherit;
+	}
+.leaflet-zoom-box {
+	width: 0;
+	height: 0;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+	z-index: 800;
+	}
+/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */
+.leaflet-overlay-pane svg {
+	-moz-user-select: none;
+	}
+
+.leaflet-pane         { z-index: 400; }
+
+.leaflet-tile-pane    { z-index: 200; }
+.leaflet-overlay-pane { z-index: 400; }
+.leaflet-shadow-pane  { z-index: 500; }
+.leaflet-marker-pane  { z-index: 600; }
+.leaflet-tooltip-pane   { z-index: 650; }
+.leaflet-popup-pane   { z-index: 700; }
+
+.leaflet-map-pane canvas { z-index: 100; }
+.leaflet-map-pane svg    { z-index: 200; }
+
+.leaflet-vml-shape {
+	width: 1px;
+	height: 1px;
+	}
+.lvml {
+	behavior: url(#default#VML);
+	display: inline-block;
+	position: absolute;
+	}
+
+
+/* control positioning */
+
+.leaflet-control {
+	position: relative;
+	z-index: 800;
+	pointer-events: visiblePainted; /* IE 9-10 doesn't have auto */
+	pointer-events: auto;
+	}
+.leaflet-top,
+.leaflet-bottom {
+	position: absolute;
+	z-index: 1000;
+	pointer-events: none;
+	}
+.leaflet-top {
+	top: 0;
+	}
+.leaflet-right {
+	right: 0;
+	}
+.leaflet-bottom {
+	bottom: 0;
+	}
+.leaflet-left {
+	left: 0;
+	}
+.leaflet-control {
+	float: left;
+	clear: both;
+	}
+.leaflet-right .leaflet-control {
+	float: right;
+	}
+.leaflet-top .leaflet-control {
+	margin-top: 10px;
+	}
+.leaflet-bottom .leaflet-control {
+	margin-bottom: 10px;
+	}
+.leaflet-left .leaflet-control {
+	margin-left: 10px;
+	}
+.leaflet-right .leaflet-control {
+	margin-right: 10px;
+	}
+
+
+/* zoom and fade animations */
+
+.leaflet-fade-anim .leaflet-popup {
+	opacity: 0;
+	-webkit-transition: opacity 0.2s linear;
+	   -moz-transition: opacity 0.2s linear;
+	        transition: opacity 0.2s linear;
+	}
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+	opacity: 1;
+	}
+.leaflet-zoom-animated {
+	-webkit-transform-origin: 0 0;
+	    -ms-transform-origin: 0 0;
+	        transform-origin: 0 0;
+	}
+svg.leaflet-zoom-animated {
+	will-change: transform;
+}
+
+.leaflet-zoom-anim .leaflet-zoom-animated {
+	-webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1);
+	   -moz-transition:    -moz-transform 0.25s cubic-bezier(0,0,0.25,1);
+	        transition:         transform 0.25s cubic-bezier(0,0,0.25,1);
+	}
+.leaflet-zoom-anim .leaflet-tile,
+.leaflet-pan-anim .leaflet-tile {
+	-webkit-transition: none;
+	   -moz-transition: none;
+	        transition: none;
+	}
+
+.leaflet-zoom-anim .leaflet-zoom-hide {
+	visibility: hidden;
+	}
+
+
+/* cursors */
+
+.leaflet-interactive {
+	cursor: pointer;
+	}
+.leaflet-grab {
+	cursor: -webkit-grab;
+	cursor:    -moz-grab;
+	cursor:         grab;
+	}
+.leaflet-crosshair,
+.leaflet-crosshair .leaflet-interactive {
+	cursor: crosshair;
+	}
+.leaflet-popup-pane,
+.leaflet-control {
+	cursor: auto;
+	}
+.leaflet-dragging .leaflet-grab,
+.leaflet-dragging .leaflet-grab .leaflet-interactive,
+.leaflet-dragging .leaflet-marker-draggable {
+	cursor: move;
+	cursor: -webkit-grabbing;
+	cursor:    -moz-grabbing;
+	cursor:         grabbing;
+	}
+
+/* marker & overlays interactivity */
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-image-layer,
+.leaflet-pane > svg path,
+.leaflet-tile-container {
+	pointer-events: none;
+	}
+
+.leaflet-marker-icon.leaflet-interactive,
+.leaflet-image-layer.leaflet-interactive,
+.leaflet-pane > svg path.leaflet-interactive,
+svg.leaflet-image-layer.leaflet-interactive path {
+	pointer-events: visiblePainted; /* IE 9-10 doesn't have auto */
+	pointer-events: auto;
+	}
+
+/* visual tweaks */
+
+.leaflet-container {
+	background: #ddd;
+	outline-offset: 1px;
+	}
+.leaflet-container a {
+	color: #0078A8;
+	}
+.leaflet-zoom-box {
+	border: 2px dotted #38f;
+	background: rgba(255,255,255,0.5);
+	}
+
+
+/* general typography */
+.leaflet-container {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1.5;
+	}
+
+
+/* general toolbar styles */
+
+.leaflet-bar {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+	border-radius: 4px;
+	}
+.leaflet-bar a {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	}
+.leaflet-bar a,
+.leaflet-control-layers-toggle {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	display: block;
+	}
+.leaflet-bar a:hover,
+.leaflet-bar a:focus {
+	background-color: #f4f4f4;
+	}
+.leaflet-bar a:first-child {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	}
+.leaflet-bar a:last-child {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom: none;
+	}
+.leaflet-bar a.leaflet-disabled {
+	cursor: default;
+	background-color: #f4f4f4;
+	color: #bbb;
+	}
+
+.leaflet-touch .leaflet-bar a {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	}
+.leaflet-touch .leaflet-bar a:first-child {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	}
+.leaflet-touch .leaflet-bar a:last-child {
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	}
+
+/* zoom control */
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+	font: bold 18px 'Lucida Console', Monaco, monospace;
+	text-indent: 1px;
+	}
+
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {
+	font-size: 22px;
+	}
+
+
+/* layers control */
+
+.leaflet-control-layers {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	background: #fff;
+	border-radius: 5px;
+	}
+.leaflet-control-layers-toggle {
+	background-image: none;
+	width: 36px;
+	height: 36px;
+	}
+.leaflet-retina .leaflet-control-layers-toggle {
+	background-image: none;
+	background-size: 26px 26px;
+	}
+.leaflet-touch .leaflet-control-layers-toggle {
+	width: 44px;
+	height: 44px;
+	}
+.leaflet-control-layers .leaflet-control-layers-list,
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+	display: none;
+	}
+.leaflet-control-layers-expanded .leaflet-control-layers-list {
+	display: block;
+	position: relative;
+	}
+.leaflet-control-layers-expanded {
+	padding: 6px 10px 6px 6px;
+	color: #333;
+	background: #fff;
+	}
+.leaflet-control-layers-scrollbar {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-right: 5px;
+	}
+.leaflet-control-layers-selector {
+	margin-top: 2px;
+	position: relative;
+	top: 1px;
+	}
+.leaflet-control-layers label {
+	display: block;
+	font-size: 13px;
+	font-size: 1.08333em;
+	}
+.leaflet-control-layers-separator {
+	height: 0;
+	border-top: 1px solid #ddd;
+	margin: 5px -10px 5px -6px;
+	}
+
+/* Default icon URLs */
+.leaflet-default-icon-path { /* used only in path-guessing heuristic, see L.Icon.Default */
+	background-image: none;
+	}
+
+
+/* attribution and scale controls */
+
+.leaflet-container .leaflet-control-attribution {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.8);
+	margin: 0;
+	}
+.leaflet-control-attribution,
+.leaflet-control-scale-line {
+	padding: 0 5px;
+	color: #333;
+	line-height: 1.4;
+	}
+.leaflet-control-attribution a {
+	text-decoration: none;
+	}
+.leaflet-control-attribution a:hover,
+.leaflet-control-attribution a:focus {
+	text-decoration: underline;
+	}
+.leaflet-attribution-flag {
+	display: inline !important;
+	vertical-align: baseline !important;
+	width: 1em;
+	height: 0.6669em;
+	}
+.leaflet-left .leaflet-control-scale {
+	margin-left: 5px;
+	}
+.leaflet-bottom .leaflet-control-scale {
+	margin-bottom: 5px;
+	}
+.leaflet-control-scale-line {
+	border: 2px solid #777;
+	border-top: none;
+	line-height: 1.1;
+	padding: 2px 5px 1px;
+	white-space: nowrap;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.8);
+	text-shadow: 1px 1px #fff;
+	}
+.leaflet-control-scale-line:not(:first-child) {
+	border-top: 2px solid #777;
+	border-bottom: none;
+	margin-top: -2px;
+	}
+.leaflet-control-scale-line:not(:first-child):not(:last-child) {
+	border-bottom: 2px solid #777;
+	}
+
+.leaflet-touch .leaflet-control-attribution,
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+	box-shadow: none;
+	}
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+	border: 2px solid rgba(0,0,0,0.2);
+	background-clip: padding-box;
+	}
+
+
+/* popup */
+
+.leaflet-popup {
+	position: absolute;
+	text-align: center;
+	margin-bottom: 20px;
+	}
+.leaflet-popup-content-wrapper {
+	padding: 1px;
+	text-align: left;
+	border-radius: 12px;
+	}
+.leaflet-popup-content {
+	margin: 13px 24px 13px 20px;
+	line-height: 1.3;
+	font-size: 13px;
+	font-size: 1.08333em;
+	min-height: 1px;
+	}
+.leaflet-popup-content p {
+	margin: 17px 0;
+	margin: 1.3em 0;
+	}
+.leaflet-popup-tip-container {
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	left: 50%;
+	margin-top: -1px;
+	margin-left: -20px;
+	overflow: hidden;
+	pointer-events: none;
+	}
+.leaflet-popup-tip {
+	width: 17px;
+	height: 17px;
+	padding: 1px;
+
+	margin: -10px auto 0;
+	pointer-events: auto;
+
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+	background: white;
+	color: #333;
+	box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+	}
+.leaflet-container a.leaflet-popup-close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	text-align: center;
+	width: 24px;
+	height: 24px;
+	font: 16px/24px Tahoma, Verdana, sans-serif;
+	color: #757575;
+	text-decoration: none;
+	background: transparent;
+	}
+.leaflet-container a.leaflet-popup-close-button:hover,
+.leaflet-container a.leaflet-popup-close-button:focus {
+	color: #585858;
+	}
+.leaflet-popup-scrolled {
+	overflow: auto;
+	}
+
+.leaflet-oldie .leaflet-popup-content-wrapper {
+	-ms-zoom: 1;
+	}
+.leaflet-oldie .leaflet-popup-tip {
+	width: 24px;
+	margin: 0 auto;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);
+	}
+
+.leaflet-oldie .leaflet-control-zoom,
+.leaflet-oldie .leaflet-control-layers,
+.leaflet-oldie .leaflet-popup-content-wrapper,
+.leaflet-oldie .leaflet-popup-tip {
+	border: 1px solid #999;
+	}
+
+
+/* div icon */
+
+.leaflet-div-icon {
+	background: #fff;
+	border: 1px solid #666;
+	}
+
+
+/* Tooltip */
+/* Base styles for the element that has a tooltip */
+.leaflet-tooltip {
+	position: absolute;
+	padding: 6px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #222;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	}
+.leaflet-tooltip.leaflet-interactive {
+	cursor: pointer;
+	pointer-events: auto;
+	}
+.leaflet-tooltip-top:before,
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+	position: absolute;
+	pointer-events: none;
+	border: 6px solid transparent;
+	background: transparent;
+	content: "";
+	}
+
+/* Directions */
+
+.leaflet-tooltip-bottom {
+	margin-top: 6px;
+}
+.leaflet-tooltip-top {
+	margin-top: -6px;
+}
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-top:before {
+	left: 50%;
+	margin-left: -6px;
+	}
+.leaflet-tooltip-top:before {
+	bottom: 0;
+	margin-bottom: -12px;
+	border-top-color: #fff;
+	}
+.leaflet-tooltip-bottom:before {
+	top: 0;
+	margin-top: -12px;
+	margin-left: -6px;
+	border-bottom-color: #fff;
+	}
+.leaflet-tooltip-left {
+	margin-left: -6px;
+}
+.leaflet-tooltip-right {
+	margin-left: 6px;
+}
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+	top: 50%;
+	margin-top: -6px;
+	}
+.leaflet-tooltip-left:before {
+	right: 0;
+	margin-right: -12px;
+	border-left-color: #fff;
+	}
+.leaflet-tooltip-right:before {
+	left: 0;
+	margin-left: -12px;
+	border-right-color: #fff;
+	}
+
+/* Printing */
+
+@media print {
+	/* Prevent printers from removing background-images of controls. */
+	.leaflet-control {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+		}
+	}
+</style>
+<link rel="stylesheet" href="/static/css/app.css" />
+</head>
+<body>
+
+<!-- inline icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <g id="i-bus"><rect x="3" y="4" width="18" height="13" rx="3"/><path d="M3 11h18"/><circle cx="7.5" cy="14" r=".9" fill="currentColor"/><circle cx="16.5" cy="14" r=".9" fill="currentColor"/><path d="M7 20l-1.5 2M17 20l1.5 2"/></g>
+  <g id="i-metro"><rect x="5" y="2.5" width="14" height="12" rx="4"/><path d="M5 9h14"/><circle cx="9" cy="11.5" r=".9" fill="currentColor"/><circle cx="15" cy="11.5" r=".9" fill="currentColor"/><path d="M8 18l-2 3M16 18l2 3M8 18h8"/></g>
+  <g id="i-walk"><circle cx="13" cy="4" r="1.8"/><path d="M13.5 8l-2.5 4.5 2 3.5 1 4M11 12.5L7.5 16M15.5 8.5l2 3"/></g>
+  <g id="i-car"><path d="M4 16h16M5 16l1.5-5h11L19 16M6 16v3M18 16v3"/><circle cx="8" cy="13.5" r=".8" fill="currentColor"/><circle cx="16" cy="13.5" r=".8" fill="currentColor"/></g>
+  <g id="i-pin"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></g>
+  <g id="i-user"><circle cx="12" cy="8" r="3.4"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></g>
+  <g id="i-send"><path d="M4 12l16-7-7 16-2-7-7-2z"/></g>
+  <g id="i-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></g>
+  <g id="i-moon"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></g>
+  <g id="i-layers"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></g>
+  <g id="i-swap"><path d="M7 4v13M4 14l3 3 3-3M17 20V7M14 10l3-3 3 3"/></g>
+  <g id="i-plus"><path d="M12 5v14M5 12h14"/></g>
+  <g id="i-alert"><path d="M12 8v5M12 16.5v.5"/><circle cx="12" cy="12" r="9"/></g>
+  <g id="i-check"><path d="M4 12.5l5 5L20 6.5"/></g>
+  <g id="i-clock"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.5l3.5 2"/></g>
+  <g id="i-route"><circle cx="5.5" cy="18" r="2.5"/><circle cx="18.5" cy="6" r="2.5"/><path d="M8 18h6a4 4 0 0 0 0-8H9a4 4 0 0 1 0-8"/></g>
+  <g id="i-distance"><path d="M4 8v8M20 8v8M8 12h8"/></g>
+  <g id="i-transfer"><path d="M4 8h13l-3-3M20 16H7l3 3"/></g>
+  <g id="i-money"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 9.5h7M8.5 13h7M12 9.5v6"/></g>
+  <g id="i-shield"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></g>
+  <g id="i-bookmark"><path d="M6 3h12v18l-6-4-6 4z"/></g>
+  <g id="i-history"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g>
+  <g id="i-settings"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2 2M17.1 17.1l2 2M19.1 4.9l-2 2M6.9 17.1l-2 2"/></g>
+  <g id="i-chat"><path d="M21 12a8 8 0 0 1-8 8H7l-4 3v-6a8 8 0 0 1 8-8h2a8 8 0 0 1 8 3z"/></g>
+  <g id="i-map"><path d="M9 3l6 2 6-2v16l-6 2-6-2-6 2V5z"/><path d="M9 3v16M15 5v16"/></g>
+  <g id="i-grid"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></g>
+  <g id="i-menu"><path d="M4 7h16M4 12h16M4 17h16"/></g>
+  <g id="i-info"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></g>
+  <g id="i-traffic"><path d="M3 17h3l2-6h8l2 6h3"/><circle cx="7" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></g>
+  <g id="i-train"><rect x="6" y="3" width="12" height="13" rx="3"/><path d="M6 10h12M8 20l1.5-3M16 20l-1.5-3"/></g>
+  <g id="i-leaf"><path d="M4 20c0-8 6-14 16-15 0 10-6 15-13 15H4z"/></g>
+  <g id="i-wave"><path d="M3 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/></g>
+  <g id="i-zap"><path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/></g>
+  <g id="i-external"><path d="M14 4h6v6"/><path d="M20 4 10 14"/>
+    <path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></g>
+</defs></svg>
+
+<div class="app" id="app">
+  <div class="scrim" id="scrim"></div>
+
+  <!-- ================================================== sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9"
+             stroke-linecap="round" stroke-linejoin="round"><use href="#i-bus"/></svg>
+      </div>
+      <div>
+        <h1>CampusTransit</h1>
+        <p>Your Smart Travel Agent
+          <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor"
+               stroke-width="2"><use href="#i-shield"/></svg></p>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <button data-view="chat" class="on">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+             stroke-linecap="round" stroke-linejoin="round"><use href="#i-chat"/></svg>
+        <span>New Chat</span>
+      </button>
+      <button data-view="plan">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+             stroke-linecap="round" stroke-linejoin="round"><use href="#i-route"/></svg>
+        <span>Plan a Trip</span>
+      </button>
+      <button data-view="explore">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+             stroke-linecap="round" stroke-linejoin="round"><use href="#i-map"/></svg>
+        <span>Explore Map</span>
+      </button>
+      <button data-view="saved">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+             stroke-linecap="round" stroke-linejoin="round"><use href="#i-bookmark"/></svg>
+        <span>Saved Routes</span><span class="badge" id="n-saved">0</span>
+      </button>
+      <button data-view="history">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+             stroke-linecap="round" stroke-linejoin="round"><use href="#i-history"/></svg>
+        <span>Travel History</span><span class="badge" id="n-history">0</span>
+      </button>
+      <button data-view="settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+             stroke-linecap="round" stroke-linejoin="round"><use href="#i-settings"/></svg>
+        <span>Settings</span>
+      </button>
+    </nav>
+
+    <div class="side-foot">
+      <!-- lightweight inline cityscape, drawn as SVG so it needs no network -->
+      <svg class="skyline" viewBox="0 0 220 92" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1" opacity=".18">
+          <path d="M0 86h220"/>
+          <rect x="10" y="58" width="26" height="28"/><rect x="18" y="48" width="10" height="10"/>
+          <path d="M23 48v-7"/>
+          <rect x="44" y="66" width="20" height="20"/>
+          <path d="M54 66v-9M50 57h8"/>
+          <rect x="72" y="52" width="30" height="34"/><path d="M87 52v-8"/>
+          <circle cx="87" cy="41" r="3.5"/>
+          <rect x="110" y="62" width="22" height="24"/>
+          <path d="M116 62v-7h10v7"/>
+          <rect x="140" y="44" width="24" height="42"/>
+          <path d="M146 44v-6h12v6"/>
+          <rect x="172" y="60" width="18" height="26"/>
+          <rect x="196" y="54" width="16" height="32"/>
+          <path d="M204 54v-6"/>
+        </g>
+      </svg>
+      <div class="side-city">
+        <b>Bengaluru</b>
+        <span><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor"
+                   stroke-width="2"><use href="#i-leaf"/></svg> Students Move Forward</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================================================== main -->
+  <div class="main">
+    <header class="topbar">
+      <button class="menu-btn" id="menu-btn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-menu"/></svg>
+      </button>
+      <div class="titles">
+        <h2>CampusTransit</h2>
+        <p>Plan Smarter. Travel Cheaper. Reach on Time.</p>
+      </div>
+      <div class="right">
+        <button class="chip-btn hide-sm" id="loc-btn" title="Map centre">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+               stroke-linecap="round" stroke-linejoin="round"><use href="#i-pin"/></svg>
+          Bengaluru, India
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor"
+               stroke-width="2" style="opacity:.55"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <button class="icon-btn" id="theme-btn" title="Toggle light / dark" aria-label="Theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+               stroke-linecap="round" stroke-linejoin="round" id="theme-icon"><use href="#i-moon"/></svg>
+        </button>
+        <button class="profile hide-sm" id="profile-btn">
+          <span class="avatar">S</span>
+          <span>Student</span>
+          <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- ============================================ CHAT (default) -->
+    <section class="view on" id="view-chat">
+      <div class="split">
+        <div class="conv">
+          <div class="msgs" id="msgs">
+            <div class="welcome" id="welcome">
+              <h3>Where are you headed today?</h3>
+              <p>Ask in plain English. I plan on BMTC and Namma Metro schedules, price every
+                 leg from the published fare charts, and tell you when something I would need
+                 is simply not available.</p>
+              <div class="chips" id="chips"></div>
+            </div>
+          </div>
+          <div class="composer">
+            <div class="composer-box">
+              <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <use href="#i-pin"/></svg>
+              <textarea id="input" rows="1"
+                placeholder="Ask anything about your travel… (e.g., &quot;Cheapest route to RVCE?&quot;)"></textarea>
+              <button class="send" id="send" aria-label="Send">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round"><use href="#i-send"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mapcol">
+          <div class="map-top">
+            <form id="route-form" autocomplete="off">
+              <div class="od-row">
+                <div class="od-field">
+                  <span class="dot"></span>
+                  <input type="text" id="origin" placeholder="From — e.g. Koramangala"
+                         autocomplete="off" aria-label="Origin" />
+                  <div class="ac-list hidden" id="ac-origin"></div>
+                </div>
+                <button class="swap" type="button" id="swap-btn" title="Swap origin and destination">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                       stroke-linecap="round" stroke-linejoin="round"><use href="#i-swap"/></svg>
+                </button>
+                <div class="od-field dest">
+                  <span class="dot"></span>
+                  <input type="text" id="destination" placeholder="To — e.g. RV College of Engineering"
+                         autocomplete="off" aria-label="Destination" />
+                  <div class="ac-list hidden" id="ac-destination"></div>
+                </div>
+                <button class="plan-btn" type="submit" id="btn-plan">Plan Route</button>
+              </div>
+            </form>
+            <div class="mode-row" id="mode-row">
+              <button class="mode-pill on" data-mode="all">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                     stroke-linecap="round" stroke-linejoin="round"><use href="#i-grid"/></svg>
+                All Modes</button>
+              <button class="mode-pill" data-mode="bus">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                     stroke-linecap="round" stroke-linejoin="round"><use href="#i-bus"/></svg>
+                BMTC Bus</button>
+              <button class="mode-pill" data-mode="metro">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                     stroke-linecap="round" stroke-linejoin="round"><use href="#i-metro"/></svg>
+                Namma Metro</button>
+              <button class="mode-pill" data-mode="walking">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                     stroke-linecap="round" stroke-linejoin="round"><use href="#i-walk"/></svg>
+                Walking</button>
+              <button class="mode-pill" data-mode="driving">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                     stroke-linecap="round" stroke-linejoin="round"><use href="#i-car"/></svg>
+                Driving</button>
+            </div>
+          </div>
+
+          <div class="map-wrap" id="map-slot-chat">
+            <div id="map"></div>
+            <div class="map-overlays" id="map-overlays">
+            <div id="map-fallback" class="hidden"></div>
+            <div class="map-layers">
+              <div class="hd">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                     stroke-linecap="round" stroke-linejoin="round"><use href="#i-layers"/></svg>
+                Layers</div>
+              <label><input type="checkbox" id="lyr-routes" checked /> Routes</label>
+              <label><input type="checkbox" id="lyr-metro" checked /> Metro lines</label>
+              <label><input type="checkbox" id="lyr-busstops" /> Bus stops</label>
+              <label id="lyr-buses-lbl"><input type="checkbox" id="lyr-buses" /> Live buses</label>
+              <label class="off" id="lyr-traffic-lbl">
+                <input type="checkbox" id="lyr-traffic" disabled /> Traffic</label>
+              <div class="live-strip" id="live-strip" hidden>
+                <span class="live-chip" id="live-chip" data-state="off">Live buses</span>
+                <span class="live-text" id="live-text"></span>
+              </div>
+            </div>
+            <div class="map-legend" id="map-legend"></div>
+            <div class="map-attr" id="map-attribution"></div>
+            </div>
+          </div>
+
+          <div class="tp-slot" id="tp-slot-chat">
+          <div class="traffic-panel" id="traffic-panel">
+            <div class="tp-head">
+              <h3>Traffic Analysis &amp; Best Time to Leave</h3>
+              <div class="sel">
+                <select id="leave-day" aria-label="Day">
+                  <option value="today">Today</option>
+                  <option value="tomorrow">Tomorrow</option>
+                </select>
+              </div>
+            </div>
+            <div id="traffic-body"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ PLAN -->
+    <section class="view" id="view-plan">
+      <div class="split">
+        <div class="conv">
+          <div class="routes-head">
+            <h3>Recommended Routes</h3>
+            <span class="mut" style="font-size:12px" id="plan-sub">Lowest to highest cost</span>
+            <span class="badge-soft hidden" id="demo-badge">DEMO DATA</span>
+          </div>
+          <div class="tabs" id="result-tabs">
+            <button class="tab on" data-sort="rank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                   stroke-linecap="round" stroke-linejoin="round"><use href="#i-grid"/></svg>
+              All Routes <span class="n" id="tab-count">(0)</span></button>
+            <button class="tab" data-sort="cheapest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                   stroke-linecap="round" stroke-linejoin="round"><use href="#i-money"/></svg>
+              Cheapest</button>
+            <button class="tab" data-sort="fastest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                   stroke-linecap="round" stroke-linejoin="round"><use href="#i-clock"/></svg>
+              Fastest</button>
+            <button class="tab" data-sort="fewest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                   stroke-linecap="round" stroke-linejoin="round"><use href="#i-transfer"/></svg>
+              Least Transfers</button>
+            <button class="tab" data-sort="walk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                   stroke-linecap="round" stroke-linejoin="round"><use href="#i-walk"/></svg>
+              Least Walking</button>
+          </div>
+          <div class="route-list" id="results-list">
+            <div class="empty">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><use href="#i-route"/></svg>
+              <b>No trip planned yet</b>
+              Enter an origin and destination, or ask in the chat. Select a card to draw it on
+              the map.</div>
+          </div>
+          <!-- KSRTC is a supplement to the routed options, never a substitute for one, so
+               it sits under them: the itineraries answer the question, this adds a fare. -->
+          <div class="ic-slot hidden" id="intercity-slot"></div>
+        </div>
+        <div class="mapcol">
+          <div class="map-top">
+            <form id="route-form-2" autocomplete="off">
+              <div class="od-row">
+                <div class="od-field">
+                  <span class="dot"></span>
+                  <input type="text" id="origin-2" placeholder="From" aria-label="Origin" />
+                  <div class="ac-list hidden" id="ac-origin-2"></div>
+                </div>
+                <button class="swap" type="button" id="swap-btn-2" title="Swap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                       stroke-linecap="round" stroke-linejoin="round"><use href="#i-swap"/></svg>
+                </button>
+                <div class="od-field dest">
+                  <span class="dot"></span>
+                  <input type="text" id="destination-2" placeholder="To" aria-label="Destination" />
+                  <div class="ac-list hidden" id="ac-destination-2"></div>
+                </div>
+                <button class="plan-btn" type="submit">Plan Route</button>
+              </div>
+            </form>
+            <div class="mode-row" id="mode-row-2">
+              <button class="mode-pill on" data-mode="all">All Modes</button>
+              <button class="mode-pill" data-mode="bus">BMTC Bus</button>
+              <button class="mode-pill" data-mode="metro">Namma Metro</button>
+              <button class="mode-pill" data-mode="walking">Walking</button>
+              <button class="mode-pill" data-mode="driving">Driving</button>
+            </div>
+          </div>
+          <div class="map-wrap" id="map-slot-plan"></div>
+          <div class="tp-slot" id="tp-slot-plan"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ EXPLORE -->
+    <section class="view" id="view-explore">
+      <div class="split">
+       <div class="conv">
+        <div class="page" style="max-width:none">
+        <h2>Explore Bengaluru</h2>
+        <p class="lede">Every station, line and stop in the local index. Coordinates come from
+           BMTC and BMRCL GTFS; the Pink Line is drawn dashed because it is not in service.</p>
+        <div class="kpis" id="explore-kpis"></div>
+        <div class="section">
+          <h4>Namma Metro network</h4>
+          <p class="mut" style="font-size:12px;margin:-4px 0 10px">
+            Purple, Green and Yellow are in service and are the lines the router uses.
+            Select a line to draw it on the map; Pink is under construction and is drawn
+            dashed for reference only.</p>
+          <div id="explore-lines"></div>
+        </div>
+        <div class="section">
+          <h4>KSRTC intercity</h4>
+          <p class="mut" style="font-size:12px;margin:-4px 0 10px">
+            KSRTC runs outside the BMTC and metro network this router searches. Only
+            corridors with a published or derived fare are listed, and none of them is
+            drawn as a route.</p>
+          <div id="explore-ksrtc"></div>
+        </div>
+        <div class="section"><h4>Stops near a point</h4>
+          <div class="card-panel" style="padding:14px 18px">
+            <div class="field-row">
+              <div class="fl"><b>Latitude / longitude</b>
+                <span>Returns real GTFS stops within the radius</span></div>
+              <div style="display:flex;gap:8px">
+                <input type="text" id="near-lat" value="12.9352" style="width:96px;min-width:0" />
+                <input type="text" id="near-lng" value="77.6245" style="width:96px;min-width:0" />
+                <button class="plan-btn" id="near-btn" type="button">Find stops</button>
+              </div>
+            </div>
+          </div>
+          <div id="near-result" style="margin-top:12px"></div>
+        </div>
+        </div>
+       </div>
+       <div class="mapcol">
+        <div class="map-wrap" id="map-slot-explore"></div>
+       </div>
+      </div>
+    </section>
+
+    <!-- ============================================ SAVED -->
+    <section class="view" id="view-saved">
+      <div class="page">
+        <h2>Saved Routes</h2>
+        <p class="lede">Trips you pinned, stored with the fare and duration exactly as they were
+           when you saved them.</p>
+        <div id="saved-list"></div>
+      </div>
+    </section>
+
+    <!-- ============================================ HISTORY -->
+    <section class="view" id="view-history">
+      <div class="page">
+        <h2>Travel History</h2>
+        <p class="lede">Trips you logged. Nothing here is re-estimated — these are the numbers
+           you were shown at the time.</p>
+        <div class="kpis" id="hist-kpis"></div>
+        <div class="section"><h4>Recent trips</h4><div id="hist-list"></div></div>
+      </div>
+    </section>
+
+    <!-- ============================================ SETTINGS -->
+    <section class="view" id="view-settings">
+      <div class="page">
+        <h2>Settings</h2>
+        <p class="lede">Preferences are written to SQLite and applied on the next request.</p>
+
+        <div class="section"><h4>Planning</h4>
+          <div class="card-panel">
+            <div class="field-row">
+              <div class="fl"><b>Default preference</b><span>Preselected sort for new trips</span></div>
+              <select id="pref-default"></select>
+            </div>
+            <div class="field-row">
+              <div class="fl"><b>Home area</b><span>Pre-filled as the origin</span></div>
+              <input type="text" id="pref-origin" placeholder="e.g. Jayanagar" />
+            </div>
+          </div>
+        </div>
+
+        <div class="section"><h4>Map &amp; appearance</h4>
+          <div class="card-panel">
+            <div class="field-row">
+              <div class="fl"><b>Basemap provider</b>
+                <span>Auto prefers Google when a key exists, then OpenStreetMap, then the built-in GTFS map</span></div>
+              <select id="pref-map">
+                <option value="auto">Auto</option>
+                <option value="google">Google Maps</option>
+                <option value="osm">OpenStreetMap</option>
+                <option value="svg">Built-in GTFS map</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <div class="fl"><b>Theme</b><span>Light or dark</span></div>
+              <select id="pref-theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <div class="fl"><b>Traffic overlay</b>
+                <span>Only draws where a provider supplies real traffic</span></div>
+              <button class="switch" id="pref-traffic" aria-label="Traffic overlay"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="section"><h4>Integrations</h4>
+          <p class="lede" style="margin-top:-4px">Every external provider this app can use,
+            what it is for, the variable it needs, and its last check. A provider is only
+            <b>ready</b> when a check inside the last 24&nbsp;hours passed, or when it is
+            verified locally on every page load &mdash; never because a variable exists.</p>
+          <div id="integrations-list"></div>
+          <details class="intg-help" style="margin-top:12px">
+            <summary>How to configure, rotate and revoke a key</summary>
+            <ol class="intg-rules" style="padding-left:18px">
+              <li>Create the key in the provider's own console (the
+                <b>Official setup</b> button on each card goes there).</li>
+              <li>Put it in <code>.env</code> on this machine &mdash; for example
+                <code>GOOGLE_MAPS_SERVER_API_KEY=AIza...</code>. Never in
+                <code>localStorage</code>, never in a query string, never in a commit.</li>
+              <li>Restart the server; <code>GET /api/v1/config/health</code> reports whether
+                the shape looks right (it never echoes the value).</li>
+              <li>Press <b>Test connection</b>. Billable probes ask for confirmation first
+                and tell you what one request costs.</li>
+              <li>To rotate: create the new key, replace the line in <code>.env</code>,
+                restart, test, then delete the old key in the console.</li>
+              <li>To revoke: delete the key in the console. The card will move to
+                <b>Authentication failed</b> on the next test, and the app falls back to the
+                local index / built-in map instead of failing.</li>
+            </ol>
+          </details>
+        </div>
+        <div class="section"><h4>Data sources</h4><div id="sources-list"></div></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="/static/vendor/leaflet.js"></script>
+<script src="/static/js/api.js"></script>
+<script src="/static/js/map.js"></script>
+<script src="/static/js/views.js"></script>
+<script src="/static/js/app.js"></script>
+</body>
+</html>

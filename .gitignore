@@ -1,0 +1,42 @@
+﻿.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.vercel/
+
+# Large generated transit databases
+data/processed/dataset_search.sqlite
+data/processed/dataset_search.sql
+data/processed/dataset_search.sql*
+data/processed/transit.db
+data/processed/chroma/
+
+# Large generated databases
+data/processed/dataset_search.sqlite3
+data/processed/transit.db
+data/processed/chroma/chroma.sqlite3
+
+# Python environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# API keys and secrets
+.env
+.env.*
+!.env.example
+
+# Deployment
+.vercel/
+
+# Generated map cache
+data/cache/tiles/
+
+# Large generated databases
+data/processed/dataset_search.sqlite3
+data/processed/transit.db
+data/processed/chroma/
